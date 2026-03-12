@@ -9,7 +9,9 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center mb-4">
-              <img src={emriLogo} alt="Emri Pinnacle LLC" className="h-16 w-auto brightness-0 invert" />
+              <div className="bg-white rounded-xl p-2">
+                <img src={emriLogo} alt="Emri Pinnacle LLC" className="h-14 w-auto" />
+              </div>
             </Link>
             <p className="text-xs text-muted-foreground leading-relaxed">
               Leading USA wholesale distributor of dry food commodities and supermarket goods since 2008.

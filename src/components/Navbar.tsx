@@ -21,7 +21,9 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/30">
       <div className="container flex items-center justify-between h-20">
         <Link to="/" className="flex items-center">
-          <img src={emriLogo} alt="Emri Pinnacle LLC" className="h-14 w-auto brightness-0 invert" />
+          <div className="bg-white rounded-xl p-1.5">
+            <img src={emriLogo} alt="Emri Pinnacle LLC" className="h-11 w-auto" />
+          </div>
         </Link>
 
         {/* Desktop */}
