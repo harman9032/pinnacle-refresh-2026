@@ -20,7 +20,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content — centered layout */}
-      <div className="container relative z-10 min-h-screen flex flex-col items-center justify-center text-center pt-20 pb-16">
+      <div className="container relative z-10 min-h-screen flex flex-col items-center justify-center text-center pt-28 pb-16">
         <motion.span
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -34,7 +34,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.7 }}
-          className="font-serif text-5xl md:text-7xl lg:text-[5.5rem] font-bold leading-[1.05] max-w-5xl mb-6"
+          className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] max-w-4xl mb-6"
         >
           We Distribute{" "}
           <span className="text-gradient-gold">Quality</span> Food

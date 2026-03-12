@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import emriLogo from "@/assets/emri-logo.png";
 
 const Footer = () => {
   return (
@@ -7,11 +8,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Link to="/" className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-gold flex items-center justify-center">
-                <span className="font-serif font-bold text-sm text-background">EP</span>
-              </div>
-              <span className="font-serif text-base font-semibold text-foreground">EMRI PINNACLE</span>
+            <Link to="/" className="flex items-center mb-4">
+              <img src={emriLogo} alt="Emri Pinnacle LLC" className="h-16 w-auto brightness-0 invert" />
             </Link>
             <p className="text-xs text-muted-foreground leading-relaxed">
               Leading USA wholesale distributor of dry food commodities and supermarket goods since 2008.

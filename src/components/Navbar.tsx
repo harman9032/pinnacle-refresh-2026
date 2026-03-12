@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import emriLogo from "@/assets/emri-logo.png";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -19,15 +20,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/30">
       <div className="container flex items-center justify-between h-20">
-        <Link to="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-lg bg-gradient-gold flex items-center justify-center">
-            <span className="font-serif font-bold text-sm text-background">EP</span>
-          </div>
-          <div>
-            <span className="font-serif text-lg font-semibold tracking-wide text-foreground">
-              EMRI PINNACLE
-            </span>
-          </div>
+        <Link to="/" className="flex items-center">
+          <img src={emriLogo} alt="Emri Pinnacle LLC" className="h-14 w-auto brightness-0 invert" />
         </Link>
 
         {/* Desktop */}
