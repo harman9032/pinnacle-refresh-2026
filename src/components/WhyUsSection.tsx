@@ -3,12 +3,12 @@ import { useRef } from "react";
 import { Award, Link2, Truck, DollarSign, Languages, MapPin } from "lucide-react";
 
 const reasons = [
-  { icon: Award, title: "14+ Years of Proven Expertise", desc: "Since 2008, deep expertise in USA wholesale distribution and dry food commodity markets." },
-  { icon: Link2, title: "Direct Manufacturer Relationships", desc: "Direct partnerships with manufacturers, cutting out middlemen and ensuring product authenticity." },
-  { icon: Truck, title: "Reliable FCL Logistics", desc: "Full Container Load shipping with reliable, on-time delivery across the USA." },
-  { icon: DollarSign, title: "Competitive Pricing & Quality", desc: "Volume purchasing power for consistently competitive pricing without sacrificing quality." },
-  { icon: Languages, title: "Multilingual Team", desc: "Fluent in English, French, Haitian Creole, and Spanish to serve diverse markets." },
-  { icon: MapPin, title: "Nationwide USA Reach", desc: "From South Florida to coast to coast, our distribution network spans the entire USA." },
+  { icon: Award, title: "14+ Years Proven", desc: "Deep expertise in USA wholesale distribution since 2008." },
+  { icon: Link2, title: "Direct Relationships", desc: "Manufacturer partnerships cutting out middlemen." },
+  { icon: Truck, title: "Reliable FCL", desc: "On-time full container load delivery across the USA." },
+  { icon: DollarSign, title: "Competitive Pricing", desc: "Volume purchasing power without sacrificing quality." },
+  { icon: Languages, title: "Multilingual Team", desc: "English, French, Haitian Creole, and Spanish." },
+  { icon: MapPin, title: "Nationwide Reach", desc: "Coast to coast distribution from South Florida." },
 ];
 
 const WhyUsSection = () => {
@@ -16,35 +16,37 @@ const WhyUsSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-32 bg-secondary/20" ref={ref}>
+    <section className="py-28" ref={ref}>
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center mb-16"
         >
-          <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">Why Choose Us</span>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold mt-4 mb-6">
+          <div className="inline-flex items-center gap-2 mb-4 justify-center">
+            <div className="w-2 h-2 rounded-full bg-primary" />
+            <span className="text-primary text-xs font-bold tracking-[0.25em] uppercase">Why Us</span>
+          </div>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold">
             Why <span className="text-gradient-gold">Emri Pinnacle</span>
           </h2>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* 2-row, 3-col bento grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {reasons.map((r, i) => (
             <motion.div
               key={r.title}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.1 * i }}
-              className="flex gap-4"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={isInView ? { opacity: 1, scale: 1 } : {}}
+              transition={{ delay: 0.08 * i }}
+              className="group p-8 rounded-2xl glass-card hover:border-primary/30 transition-all text-center"
             >
-              <div className="w-12 h-12 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center">
-                <r.icon size={20} className="text-primary" />
+              <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                <r.icon size={24} className="text-primary" />
               </div>
-              <div>
-                <h3 className="font-serif text-lg font-semibold mb-1">{r.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{r.desc}</p>
-              </div>
+              <h3 className="font-serif text-base font-semibold mb-2">{r.title}</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">{r.desc}</p>
             </motion.div>
           ))}
         </div>

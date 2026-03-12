@@ -1,112 +1,96 @@
 import { motion } from "framer-motion";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-port.jpg";
+
+const counters = [
+  { value: "18+", label: "Years" },
+  { value: "50+", label: "Partners" },
+  { value: "FCL", label: "Logistics" },
+  { value: "3+", label: "Languages" },
+];
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background */}
+    <section id="home" className="relative min-h-screen overflow-hidden">
+      {/* Full bleed background */}
       <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Shipping containers at port"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/30" />
+        <img src={heroImage} alt="Shipping containers at port" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-background/70 backdrop-blur-[2px]" />
       </div>
 
-      <div className="container relative z-10 pt-20">
-        <div className="max-w-3xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="flex items-center gap-3 mb-8"
-          >
-            <div className="h-px w-12 bg-primary" />
-            <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">
-              B2B Wholesale Distribution
-            </span>
-          </motion.div>
+      {/* Content — centered layout */}
+      <div className="container relative z-10 min-h-screen flex flex-col items-center justify-center text-center pt-20 pb-16">
+        <motion.span
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.1 }}
+          className="inline-block px-5 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold tracking-[0.25em] uppercase mb-8"
+        >
+          B2B Wholesale Distribution
+        </motion.span>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-8"
-          >
-            Premium Wholesale{" "}
-            <span className="text-gradient-gold italic">Dry Food</span>{" "}
-            Distribution
-          </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.7 }}
+          className="font-serif text-5xl md:text-7xl lg:text-[5.5rem] font-bold leading-[1.05] max-w-5xl mb-6"
+        >
+          We Distribute{" "}
+          <span className="text-gradient-gold">Quality</span> Food
+          <br className="hidden md:block" /> Commodities Across the USA
+        </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-xl mb-10 leading-relaxed"
-          >
-            Containerized commodities • Full container load logistics • 
-            Nationwide USA Wholesale Distribution
-          </motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6 }}
+          className="text-muted-foreground text-lg md:text-xl max-w-2xl mb-12 leading-relaxed"
+        >
+          Containerized dry food commodities, full container load logistics, and seamless nationwide wholesale distribution from South Florida.
+        </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8 }}
-            className="flex flex-wrap gap-4 mb-16"
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8 }}
+          className="flex flex-col sm:flex-row gap-4 mb-20"
+        >
+          <Link
+            to="/contact"
+            className="inline-flex items-center justify-center gap-2 px-10 py-4 bg-gradient-gold text-background font-semibold rounded-full hover:opacity-90 transition-opacity shadow-gold text-sm tracking-wide"
           >
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-gold text-background font-semibold rounded-lg hover:opacity-90 transition-opacity shadow-gold"
-            >
-              Request a Quote <ArrowRight size={18} />
-            </a>
-            <a
-              href="#products"
-              className="inline-flex items-center gap-2 px-8 py-4 border border-border text-foreground font-semibold rounded-lg hover:bg-secondary transition-colors"
-            >
-              View Our Products
-            </a>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
-            className="flex items-center gap-6"
+            Request a Quote <ArrowRight size={16} />
+          </Link>
+          <Link
+            to="/products"
+            className="inline-flex items-center justify-center gap-2 px-10 py-4 border border-border/60 text-foreground font-semibold rounded-full hover:bg-secondary/50 transition-colors text-sm tracking-wide"
           >
-            <span className="text-xs text-muted-foreground tracking-[0.15em] uppercase">
-              Partnered With
-            </span>
-            <div className="flex gap-3 flex-wrap">
-              {["Sam's Club", "Trujillo & Sons", "F. Garcia Wholesale"].map((name) => (
-                <span
-                  key={name}
-                  className="px-3 py-1.5 text-xs font-medium text-muted-foreground border border-border/50 rounded-full bg-secondary/30"
-                >
-                  {name}
-                </span>
-              ))}
-              <span className="px-3 py-1.5 text-xs text-primary italic">and more</span>
-            </div>
-          </motion.div>
-        </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-      >
-        <span className="text-xs text-muted-foreground tracking-[0.2em] uppercase">Scroll</span>
-        <motion.div animate={{ y: [0, 8, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}>
-          <ChevronDown size={20} className="text-primary" />
+            Explore Products
+          </Link>
         </motion.div>
-      </motion.div>
+
+        {/* Counters strip */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1 }}
+          className="flex gap-8 md:gap-16"
+        >
+          {counters.map((c, i) => (
+            <motion.div
+              key={c.label}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.1 + i * 0.1 }}
+              className="text-center"
+            >
+              <div className="font-serif text-3xl md:text-4xl font-bold text-primary">{c.value}</div>
+              <div className="text-xs text-muted-foreground mt-1 tracking-wider uppercase">{c.label}</div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
     </section>
   );
 };

@@ -1,80 +1,85 @@
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import warehouseImage from "@/assets/warehouse.jpg";
-
-const stats = [
-  { value: "2008", label: "Founded" },
-  { value: "18+", label: "Years of Expertise" },
-  { value: "3+", label: "Languages Spoken" },
-  { value: "50+", label: "Partner Companies" },
-];
 
 const AboutSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="py-32 relative" ref={ref}>
+    <section id="about" className="py-28" ref={ref}>
       <div className="container">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Image */}
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8 }}
-            className="relative"
-          >
-            <div className="aspect-[3/4] rounded-2xl overflow-hidden">
+        {/* Full-width horizontal card with image on right */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7 }}
+          className="glass-card rounded-3xl overflow-hidden"
+        >
+          <div className="grid lg:grid-cols-2">
+            {/* Text side */}
+            <div className="p-10 md:p-16 flex flex-col justify-center">
+              <div className="inline-flex items-center gap-2 mb-6">
+                <div className="w-2 h-2 rounded-full bg-primary" />
+                <span className="text-primary text-xs font-bold tracking-[0.25em] uppercase">About Us</span>
+              </div>
+
+              <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight mb-6">
+                Trusted Leader in{" "}
+                <span className="text-gradient-gold">Wholesale Distribution</span>{" "}
+                Since 2008
+              </h2>
+
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Founded by Olivier Richardson in South Florida, Emri Pinnacle has become a trusted leader in USA wholesale distribution of dry food commodities and supermarket goods.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                With over 14 years of expertise in wholesale distribution operations, strategic sourcing, and domestic trade — fluent in English, French, Haitian Creole, and Spanish.
+              </p>
+
+              <blockquote className="border-l-2 border-primary pl-5 mb-8">
+                <p className="text-sm italic text-foreground/80 leading-relaxed">
+                  "Connecting manufacturers, wholesalers, and retailers with consistent, high-quality bulk products and seamless logistics."
+                </p>
+                <footer className="text-primary text-xs font-semibold mt-2">— Our Mission</footer>
+              </blockquote>
+
+              <Link
+                to="/about"
+                className="inline-flex items-center gap-2 text-sm text-primary font-semibold hover:gap-3 transition-all"
+              >
+                Learn More About Us <ArrowRight size={14} />
+              </Link>
+            </div>
+
+            {/* Image side */}
+            <div className="relative min-h-[400px] lg:min-h-0">
               <img
                 src={warehouseImage}
                 alt="Warehouse operations"
-                className="w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover"
               />
+              {/* Floating stats on image */}
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6 grid grid-cols-4 gap-3">
+                {[
+                  { val: "2008", lbl: "Founded" },
+                  { val: "18+", lbl: "Years" },
+                  { val: "50+", lbl: "Partners" },
+                  { val: "FCL", lbl: "Logistics" },
+                ].map((s) => (
+                  <div key={s.lbl} className="text-center p-3 rounded-lg bg-background/60 backdrop-blur-md">
+                    <div className="font-serif text-lg font-bold text-primary">{s.val}</div>
+                    <div className="text-[10px] text-foreground/70 tracking-wide uppercase">{s.lbl}</div>
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="absolute -bottom-6 -right-6 p-6 glass-card rounded-xl">
-              <p className="font-serif text-sm italic text-muted-foreground leading-relaxed max-w-[240px]">
-                "Connecting manufacturers, wholesalers, and retailers with consistent, high-quality bulk products."
-              </p>
-              <p className="text-primary text-xs mt-2 font-semibold tracking-wide">— Our Mission</p>
-            </div>
-          </motion.div>
-
-          {/* Content */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <span className="text-primary text-sm font-semibold tracking-[0.2em] uppercase">About Us</span>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mt-4 mb-6 leading-tight">
-              A Trusted Leader in{" "}
-              <span className="text-gradient-gold">USA Wholesale</span> Distribution
-            </h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Founded in March 2008 by Olivier Richardson in South Florida, Emri Pinnacle has become a trusted leader in USA wholesale distribution of dry food commodities and supermarket goods.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-10">
-              Owner & Managing Director Olivier Richardson brings over 14 years of expertise in wholesale distribution operations, strategic sourcing, and domestic trade. Fluent in English, French, and Haitian Creole with working proficiency in Spanish.
-            </p>
-
-            {/* Stats */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-              {stats.map((stat, i) => (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ delay: 0.4 + i * 0.1 }}
-                  className="text-center p-4 rounded-xl bg-secondary/50"
-                >
-                  <div className="font-serif text-2xl font-bold text-primary">{stat.value}</div>
-                  <div className="text-xs text-muted-foreground mt-1 tracking-wide">{stat.label}</div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
