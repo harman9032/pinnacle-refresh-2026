@@ -34,7 +34,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.7 }}
-          className="font-serif text-5xl md:text-7xl lg:text-[5.5rem] font-bold leading-[1.05] max-w-5xl mb-6"
+          className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] max-w-4xl mb-6"
         >
           We Distribute{" "}
           <span className="text-gradient-gold">Quality</span> Food
