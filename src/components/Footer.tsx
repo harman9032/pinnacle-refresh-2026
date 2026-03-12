@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import emriLogo from "@/assets/emri-logo.png";
 
 const Footer = () => {
   return (
