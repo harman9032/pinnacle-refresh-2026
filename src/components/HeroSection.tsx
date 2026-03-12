@@ -20,7 +20,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content — centered layout */}
-      <div className="container relative z-10 min-h-screen flex flex-col items-center justify-center text-center pt-20 pb-16">
+      <div className="container relative z-10 min-h-screen flex flex-col items-center justify-center text-center pt-28 pb-16">
         <motion.span
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
