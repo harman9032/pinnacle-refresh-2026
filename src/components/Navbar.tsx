@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import emriLogo from "@/assets/emri-logo.png";
 
 const navLinks = [
   { label: "Home", href: "/" },
