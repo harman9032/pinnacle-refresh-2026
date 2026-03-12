@@ -71,22 +71,24 @@ const Navbar = () => {
           >
             <div className="container py-6 flex flex-col gap-4">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.label}
-                  href={link.href}
+                  to={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-sm font-medium text-muted-foreground hover:text-primary py-2 tracking-wide uppercase"
+                  className={`text-sm font-medium py-2 tracking-wide uppercase ${
+                    location.pathname === link.href ? "text-primary" : "text-muted-foreground hover:text-primary"
+                  }`}
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 onClick={() => setIsOpen(false)}
                 className="px-6 py-3 bg-gradient-gold text-background font-semibold text-sm rounded-lg text-center tracking-wide"
               >
                 Get a Quote
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}
