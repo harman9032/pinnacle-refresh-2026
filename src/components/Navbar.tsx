@@ -33,20 +33,22 @@ const Navbar = () => {
         {/* Desktop */}
         <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
-              href={link.href}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors tracking-wide uppercase"
+              to={link.href}
+              className={`text-sm font-medium transition-colors tracking-wide uppercase ${
+                location.pathname === link.href ? "text-primary" : "text-muted-foreground hover:text-primary"
+              }`}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="px-6 py-2.5 bg-gradient-gold text-background font-semibold text-sm rounded-lg hover:opacity-90 transition-opacity tracking-wide"
           >
             Get a Quote
-          </a>
+          </Link>
         </div>
 
         {/* Mobile toggle */}
