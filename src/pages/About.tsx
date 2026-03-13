@@ -118,14 +118,15 @@ const About = () => {
               </div>
               <div className="text-center md:text-left mt-4">
                 <h3 className="font-serif text-xl font-bold">Emri Pinnacle LLC</h3>
-                <p className="text-sm text-primary font-medium">Eileen Metellus
-(954) 670-4886
-9800 N Hollybrook Lake Dr, Suite 9-104l
-Pembroke Pines, FL 33025
-
-
-
-                </p>
+                <div className="text-sm text-primary font-medium mt-1 space-y-1">
+                  <p>Eileen Metellus</p>
+                  <p className="text-muted-foreground">(954) 670-4886</p>
+                  <p className="text-muted-foreground text-xs leading-snug">
+                    9800 N Hollybrook Lake Dr,<br />
+                    Suite 9-104l<br />
+                    Pembroke Pines, FL 33025
+                  </p>
+                </div>
                 <div className="flex gap-2 flex-wrap mt-3 justify-center md:justify-start">
                   {["English", "French", "Haitian Creole", "Spanish"].map((l) => <span key={l} className="text-[10px] px-2 py-1 rounded-full bg-primary/10 text-primary font-medium">{l}</span>)}
                 </div>
