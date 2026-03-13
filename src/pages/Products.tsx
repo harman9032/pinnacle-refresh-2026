@@ -8,13 +8,13 @@ import { ArrowRight, Package } from "lucide-react";
 type Category = "All" | "Beans & Legumes" | "Grains & Cereals" | "Cooking Oils" | "Canned Goods" | "Beverages" | "Snacks & Noodles" | "Pet Food";
 
 const categories: { label: Category; count: number }[] = [
-  { label: "All", count: 25 },
+  { label: "All", count: 26 },
   { label: "Beans & Legumes", count: 11 },
   { label: "Grains & Cereals", count: 6 },
-  { label: "Cooking Oils", count: 2 },
+  { label: "Cooking Oils", count: 3 },
   { label: "Canned Goods", count: 1 },
-  { label: "Beverages", count: 3 },
-  { label: "Snacks & Noodles", count: 1 },
+  { label: "Beverages", count: 2 },
+  { label: "Snacks & Noodles", count: 2 },
   { label: "Pet Food", count: 1 },
 ];
 
@@ -37,11 +37,12 @@ const products = [
   { brand: "Family", name: "Bulgur Wheat 50lb", desc: "Family Brand Bulgur Wheat. 50 Lb bag. Premium cracked wheat for wholesale buyers.", img: "https://emripinnacle.com/products/Family_Bulgur_Wheat_50lb.png", cat: "Grains & Cereals" },
   { brand: "Family", name: "Rice Extra Fancy Long Grain 50lb", desc: "Family Brand Extra Fancy Long Grain Rice. 50 Lb bag. Premium quality for supermarket distribution.", img: "https://emripinnacle.com/products/Family_Rice_Extra_Fancy_Long_Grain_50lb.jpeg", cat: "Grains & Cereals" },
   { brand: "Alberto", name: "Cooking Oils", desc: "Alberto Pure Vegetable Oil & Pure Corn Oil (Aceite de Maiz). High-quality cooking oils in commercial volumes.", img: "https://emripinnacle.com/products/Alberto_cooking_oils.png", cat: "Cooking Oils" },
+  { brand: "Alberto", name: "Vegetable Oils", desc: "Alberto Pure Vegetable Oil. High-quality cooking oils in commercial volumes.", img: "https://linfinidistributions.com/products/albertovegeoil.jpg", cat: "Cooking Oils" },
   { brand: "Family", name: "Vegetable Canola Corn Oil", desc: "Family Brand Vegetable, Canola & Corn Oil. Retail-ready bottle packaging for supermarket shelves.", img: "https://emripinnacle.com/products/Family_Vegetable_Canola_Corn_Oil_Bottles.png", cat: "Cooking Oils" },
-  { brand: "Alberto", name: "Tomato Paste", desc: "Alberto 100% Natural Tomato Paste. Net Wt. 6 Lb. 15 Oz (3.15 KG). A-1 Premium Quality since 1966.", img: "https://emripinnacle.com/products/Alberto_tomato_paste.png", cat: "Canned Goods" },
+  { brand: "Alberto", name: "Tomato Paste", desc: "Alberto 100% Natural Tomato Paste. Net Wt. 6 Lb. 15 Oz (3.15 KG). A-1 Premium Quality since 1966.", img: "https://linfinidistributions.com/products/Albertotomato.jpg", cat: "Canned Goods" },
+  { brand: "Pringles", name: "Assorted Flavors Pack", desc: "Pringles Assorted Flavors. Multi-pack variety for retail and convenience store distribution.", img: "https://linfinidistributions.com/products/Pringlescombo.jpg", cat: "Snacks & Noodles" },
   { brand: "Gatorade", name: "Mixed Flavor Pallet", desc: "Gatorade Mixed Flavor Pallet. Full pallet quantities for high-volume distribution and retail chains.", img: "https://emripinnacle.com/products/Gatorade_Mixed_Flavor_Pallet.jpeg", cat: "Beverages" },
   { brand: "Jumex", name: "Assorted Fruit Cans Pack", desc: "Jumex Assorted Fruit Nectar. Multi-flavor can pack. Popular across Latin American markets.", img: "https://emripinnacle.com/products/Jumex_Assorted_Fruit_Nectar_Cans_Pack.jpeg", cat: "Beverages" },
-  { brand: "Jumex", name: "Strawberry Banana Cans", desc: "Jumex Strawberry Banana Nectar. Can format for retail shelves. A top-selling fruit beverage.", img: "https://emripinnacle.com/products/Jumex_Strawberry_Banana_Nectar_Cans.png", cat: "Beverages" },
   { brand: "Nissin", name: "Top Ramen Chicken & Mixed Flavors", desc: "Nissin Top Ramen Chicken Flavor. Bulk pack for wholesale and retail distribution.", img: "https://emripinnacle.com/products/Nissin_Top_Ramen_Chicken_Flavor_Pack.jpeg", cat: "Snacks & Noodles" },
   { brand: "Pedigree", name: "Adult Complete Nutrition 55lb", desc: "Pedigree Adult Complete Nutrition Dog Food. 55 Lb bag. Wholesale bulk for pet supply retailers.", img: "https://emripinnacle.com/products/Pedigree_Adult_Complete_Nutrition_Dog_Food_55lb.jpeg", cat: "Pet Food" },
 ];
@@ -94,7 +95,7 @@ const Products = () => {
             ))}
           </div>
 
-          {/* Product grid — 5 columns on xl for density */}
+          {/* Product grid */}
           <motion.div
             layout
             className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
@@ -128,7 +129,7 @@ const Products = () => {
           </motion.div>
 
           <p className="text-center text-sm text-muted-foreground mt-10">
-            Showing {filtered.length} of 25 products — container quantities only.
+            Showing {filtered.length} of 26 products — container quantities only.
           </p>
         </div>
       </section>

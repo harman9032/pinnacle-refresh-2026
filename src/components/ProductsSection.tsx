@@ -10,6 +10,7 @@ const featured = [
   { brand: "Family", name: "Long Grain Rice 50lb", desc: "Extra Fancy Long Grain Rice", img: "https://emripinnacle.com/products/Family_Rice_Extra_Fancy_Long_Grain_50lb.jpeg" },
   { brand: "Alberto", name: "Bulgur Cracked Wheat", desc: "A-1 Premium Quality, 50 Lbs", img: "https://emripinnacle.com/products/Alberto_Bulgur_sack.png" },
   { brand: "Don Lucas", name: "Black Beans", desc: "Premium Triple-Cleaned, 50 Lbs", img: "https://emripinnacle.com/products/Don_Lucas_black_beans.png" },
+  { brand: "Pringles", name: "Assorted Flavors", desc: "Multi-pack variety for retail", img: "https://linfinidistributions.com/products/Pringlescombo.jpg" },
 ];
 
 const ProductsSection = () => {
@@ -41,7 +42,7 @@ const ProductsSection = () => {
               to="/products"
               className="inline-flex items-center gap-2 text-sm text-primary font-semibold hover:gap-3 transition-all"
             >
-              View All 25 Products <ArrowRight size={14} />
+              View All 26 Products <ArrowRight size={14} />
             </Link>
           </motion.div>
         </div>
