@@ -20,7 +20,7 @@ const categories: { label: Category; count: number }[] = [
 
 const products = [
   { brand: "Emri Pinnacle", name: "Black Beans", desc: "Our own branded black beans. 50 LBS / 22.68 KGS bags, superior quality, packed for Emri Pinnacle LLC. Miami, Florida.", img: "https://emripinnacle.com/products/Black_beans.png", cat: "Beans & Legumes" },
-  { brand: "Emri Pinnacle", name: "Pinto Beans", desc: "Our own branded pinto beans. 50 LBS / 22.68 KGS bags, superior quality, packed for Emri Pinnacle LLC. Miami, Florida.", img: "https://emripinnacle.com/products/PintoBeans.png", cat: "Beans & Legumes" },
+  { brand: "Emri Pinnacle", name: "Pinto Beans", desc: "Our own branded pinto beans. 50 LBS / 22.68 KGS bags, superior quality, packed for Emri Pinnacle LLC. Miami, Florida.", img: "/lovable-uploads/09f67c85-4cd7-489c-bbc9-417d58f383c4.jpg", cat: "Beans & Legumes" },
   { brand: "Alberto", name: "Pinto Beans", desc: "Alberto A-1 Premium Quality Pinto Beans (Frijoles Pintos). 50 Lbs / 22.68 Kg. Distributed by Trujillo & Sons, Miami, FL.", img: "https://emripinnacle.com/products/Alberto_Pinto_Beans_sack.png", cat: "Beans & Legumes" },
   { brand: "Alberto", name: "Michigan Black Beans", desc: "Alberto A-1 Premium Quality Michigan Black Beans (Frijoles Negros). 50 Lbs / 22.68 Kg. Product of U.S.A.", img: "https://emripinnacle.com/products/Alberto_Michigan_Black_Beans_sack_new.png", cat: "Beans & Legumes" },
   { brand: "Americas", name: "Black Beans 100lb", desc: "Americas Brand Premium Black Beans. 100 Lb bulk sack for high-volume wholesale distribution.", img: "https://emripinnacle.com/products/Americas_Black_Beans_100lb.png", cat: "Beans & Legumes" },
