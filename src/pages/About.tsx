@@ -8,27 +8,27 @@ import warehouseImage from "@/assets/warehouse.jpg";
 import heroImage from "@/assets/hero-port.jpg";
 
 const stats = [
-  { value: "2008", label: "Founded" },
-  { value: "18+", label: "Years in Business" },
-  { value: "3+", label: "Languages Spoken" },
-  { value: "50+", label: "Partner Companies" },
-  { value: "FCL", label: "Container Logistics" },
-];
+{ value: "2008", label: "Founded" },
+{ value: "18+", label: "Years in Business" },
+{ value: "3+", label: "Languages Spoken" },
+{ value: "50+", label: "Partner Companies" },
+{ value: "FCL", label: "Container Logistics" }];
+
 
 const values = [
-  { icon: Star, title: "Excellence", desc: "We pursue the highest standards in every product we source and every shipment we coordinate." },
-  { icon: Heart, title: "Reliability", desc: "Our partners count on us for consistent quality, on-time delivery, and transparent communication." },
-  { icon: Scale, title: "Integrity", desc: "We build long-term relationships through honest dealings, fair pricing, and mutual respect." },
-];
+{ icon: Star, title: "Excellence", desc: "We pursue the highest standards in every product we source and every shipment we coordinate." },
+{ icon: Heart, title: "Reliability", desc: "Our partners count on us for consistent quality, on-time delivery, and transparent communication." },
+{ icon: Scale, title: "Integrity", desc: "We build long-term relationships through honest dealings, fair pricing, and mutual respect." }];
+
 
 const strengths = [
-  { icon: Award, title: "18+ Years of Proven Expertise", desc: "Deep knowledge of USA wholesale distribution and dry food commodity markets since 2008." },
-  { icon: Link2, title: "Direct Manufacturer Relationships", desc: "Established partnerships with trusted producers across the USA, ensuring product authenticity and competitive pricing." },
-  { icon: Truck, title: "FCL Logistics Excellence", desc: "Full Container Load shipping coordination with reliable, on-time delivery across the USA." },
-  { icon: ShieldCheck, title: "Compliance Expertise", desc: "USA regulatory compliance support and trade documentation for seamless domestic operations." },
-  { icon: Languages, title: "Multilingual Support", desc: "Our team communicates fluently in English, French, Haitian Creole, and Spanish to serve diverse markets." },
-  { icon: MapPin, title: "Nationwide USA Reach", desc: "From South Florida to coast to coast, our distribution network spans the entire USA." },
-];
+{ icon: Award, title: "18+ Years of Proven Expertise", desc: "Deep knowledge of USA wholesale distribution and dry food commodity markets since 2008." },
+{ icon: Link2, title: "Direct Manufacturer Relationships", desc: "Established partnerships with trusted producers across the USA, ensuring product authenticity and competitive pricing." },
+{ icon: Truck, title: "FCL Logistics Excellence", desc: "Full Container Load shipping coordination with reliable, on-time delivery across the USA." },
+{ icon: ShieldCheck, title: "Compliance Expertise", desc: "USA regulatory compliance support and trade documentation for seamless domestic operations." },
+{ icon: Languages, title: "Multilingual Support", desc: "Our team communicates fluently in English, French, Haitian Creole, and Spanish to serve diverse markets." },
+{ icon: MapPin, title: "Nationwide USA Reach", desc: "From South Florida to coast to coast, our distribution network spans the entire USA." }];
+
 
 const About = () => {
   const storyRef = useRef(null);
@@ -46,8 +46,8 @@ const About = () => {
       <PageHero
         label="About Us"
         title="Trusted Wholesale Partner Since 2008"
-        description="Emri Pinnacle is a leading USA wholesale distributor of containerized dry food commodities and supermarket goods based in Miramar, Florida."
-      />
+        description="Emri Pinnacle is a leading USA wholesale distributor of containerized dry food commodities and supermarket goods based in Miramar, Florida." />
+      
 
       {/* Our Story — Horizontal split layout */}
       <section className="py-28" ref={storyRef}>
@@ -56,8 +56,8 @@ const About = () => {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={storyInView ? { opacity: 1, y: 0 } : {}}
-              className="lg:col-span-3"
-            >
+              className="lg:col-span-3">
+              
               <span className="text-primary text-xs font-semibold tracking-[0.2em] uppercase">Our Story</span>
               <h2 className="font-serif text-3xl md:text-4xl font-bold mt-3 mb-8">
                 Building a Legacy in Wholesale Distribution
@@ -79,25 +79,25 @@ const About = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={storyInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ delay: 0.2 }}
-              className="lg:col-span-2 relative"
-            >
+              className="lg:col-span-2 relative">
+              
               <div className="aspect-[4/5] rounded-2xl overflow-hidden">
                 <img src={heroImage} alt="Shipping containers" className="w-full h-full object-cover" />
               </div>
               {/* Stats overlay */}
               <div className="absolute -bottom-8 -left-4 right-4 grid grid-cols-5 gap-2">
-                {stats.map((s, i) => (
-                  <motion.div
-                    key={s.label}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={storyInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ delay: 0.3 + i * 0.08 }}
-                    className="text-center p-3 glass-card rounded-lg"
-                  >
+                {stats.map((s, i) =>
+                <motion.div
+                  key={s.label}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={storyInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ delay: 0.3 + i * 0.08 }}
+                  className="text-center p-3 glass-card rounded-lg">
+                  
                     <div className="font-serif text-sm font-bold text-primary">{s.value}</div>
                     <div className="text-[10px] text-muted-foreground mt-0.5 leading-tight">{s.label}</div>
                   </motion.div>
-                ))}
+                )}
               </div>
             </motion.div>
           </div>
@@ -110,19 +110,24 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={leaderInView ? { opacity: 1, y: 0 } : {}}
-            className="glass-card rounded-2xl p-10 md:p-16 grid md:grid-cols-3 gap-10 items-center"
-          >
+            className="glass-card rounded-2xl p-10 md:p-16 grid md:grid-cols-3 gap-10 items-center">
+            
             <div className="md:col-span-1">
               <div className="w-32 h-32 rounded-2xl bg-gradient-gold flex items-center justify-center mx-auto md:mx-0">
-                <span className="font-serif text-4xl font-bold text-background">OR</span>
+                <span className="font-serif text-4xl font-bold text-background">EMRI</span>
               </div>
               <div className="text-center md:text-left mt-4">
-                <h3 className="font-serif text-xl font-bold">Olivier Richardson</h3>
-                <p className="text-sm text-primary font-medium">Owner & Managing Director</p>
+                <h3 className="font-serif text-xl font-bold">Emri Pinnacle LLC</h3>
+                <p className="text-sm text-primary font-medium">Eileen Metellus
+(954) 670-4886
+9800 N Hollybrook Lake Dr, Suite 9-104l
+Pembroke Pines, FL 33025
+
+
+
+                </p>
                 <div className="flex gap-2 flex-wrap mt-3 justify-center md:justify-start">
-                  {["English", "French", "Haitian Creole", "Spanish"].map((l) => (
-                    <span key={l} className="text-[10px] px-2 py-1 rounded-full bg-primary/10 text-primary font-medium">{l}</span>
-                  ))}
+                  {["English", "French", "Haitian Creole", "Spanish"].map((l) => <span key={l} className="text-[10px] px-2 py-1 rounded-full bg-primary/10 text-primary font-medium">{l}</span>)}
                 </div>
               </div>
             </div>
@@ -148,11 +153,8 @@ const About = () => {
       {/* Mission & Values — Centered with icon cards */}
       <section className="py-28" ref={valuesRef}>
         <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={valuesInView ? { opacity: 1, y: 0 } : {}}
-            className="text-center max-w-3xl mx-auto mb-16"
-          >
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={valuesInView ? { opacity: 1, y: 0 } : {}} className="text-center max-w-3xl mx-auto mb-16">
+            
             <span className="text-primary text-xs font-semibold tracking-[0.2em] uppercase">Mission & Values</span>
             <h2 className="font-serif text-3xl md:text-4xl font-bold mt-3 mb-6">What Drives Us</h2>
             <blockquote className="text-lg italic text-foreground/80 border-l-2 border-primary pl-6 text-left mx-auto max-w-xl">
@@ -162,21 +164,19 @@ const About = () => {
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {values.map((v, i) => (
-              <motion.div
-                key={v.title}
-                initial={{ opacity: 0, y: 30 }}
-                animate={valuesInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: 0.1 * i }}
-                className="text-center p-8 rounded-2xl glass-card hover:border-primary/30 transition-all group"
-              >
+            {values.map((v, i) => <motion.div key={v.title}
+              initial={{ opacity: 0, y: 30 }}
+              animate={valuesInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.1 * i }}
+              className="text-center p-8 rounded-2xl glass-card hover:border-primary/30 transition-all group">
+              
                 <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-primary/20 transition-colors">
                   <v.icon size={28} className="text-primary" />
                 </div>
                 <h3 className="font-serif text-xl font-semibold mb-3">{v.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{v.desc}</p>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -187,8 +187,8 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={strengthsInView ? { opacity: 1, y: 0 } : {}}
-            className="text-center max-w-2xl mx-auto mb-16"
-          >
+            className="text-center max-w-2xl mx-auto mb-16">
+            
             <span className="text-primary text-xs font-semibold tracking-[0.2em] uppercase">Our Strengths</span>
             <h2 className="font-serif text-3xl md:text-4xl font-bold mt-3 mb-4">Why Choose Emri Pinnacle</h2>
             <p className="text-muted-foreground">
@@ -197,14 +197,14 @@ const About = () => {
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {strengths.map((s, i) => (
-              <motion.div
-                key={s.title}
-                initial={{ opacity: 0, y: 30 }}
-                animate={strengthsInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: 0.08 * i }}
-                className="flex gap-4 p-6 rounded-xl glass-card hover:border-primary/30 transition-all"
-              >
+            {strengths.map((s, i) =>
+            <motion.div
+              key={s.title}
+              initial={{ opacity: 0, y: 30 }}
+              animate={strengthsInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.08 * i }}
+              className="flex gap-4 p-6 rounded-xl glass-card hover:border-primary/30 transition-all">
+              
                 <div className="w-11 h-11 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center">
                   <s.icon size={20} className="text-primary" />
                 </div>
@@ -213,14 +213,14 @@ const About = () => {
                   <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
                 </div>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>);
+
 };
 
 export default About;
