@@ -36,9 +36,9 @@ const AboutSection = () => {
                 A Trusted Leader in USA Wholesale Distribution Founded in March 2008, L'Infini Distributions has become a trusted leader in USA wholesale distribution of dry food commodities and supermarket goods. With 18 years of expertise in distribution operations, strategic sourcing, and domestic trade, the company is committed to delivering consistent quality and reliability through professional procurement processes and strong, long-term client relationships.
               </p>
 
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                ​
-              </p>
+              
+
+              
 
               <blockquote className="border-l-2 border-primary pl-5 mb-8">
                 <p className="text-sm italic text-foreground/80 leading-relaxed">
