@@ -58,7 +58,7 @@ const ContactSection = () => {
                     <div className="w-10 h-10 rounded-xl bg-background/10 flex items-center justify-center">
                       <MapPin size={18} className="text-background" />
                     </div>
-                    <span className="text-sm text-background/90">Miramar, Florida, USA</span>
+                    <span className="text-sm text-background/90">Pembroke Pines, Florida, USA</span>
                   </div>
                 </div>
               </div>
