@@ -14,7 +14,7 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-xs text-muted-foreground leading-relaxed">
-              Leading USA wholesale distributor of dry food commodities and supermarket goods since 2008.
+              Leading USA wholesale distributor of dry food commodities and supermarket goods since 2024.
             </p>
           </div>
 

@@ -29,7 +29,7 @@ const AboutSection = () => {
               <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight mb-6">
                 Trusted Leader in{" "}
                 <span className="text-gradient-gold">Wholesale Distribution</span>{" "}
-                Since 2008
+                Since 2024
               </h2>
 
               <p className="text-muted-foreground leading-relaxed mb-4">
@@ -37,7 +37,7 @@ const AboutSection = () => {
               </p>
 
               <p className="text-muted-foreground leading-relaxed mb-8">
-                With over 14 years of expertise in wholesale distribution operations, strategic sourcing, and domestic trade — fluent in English, French, Haitian Creole, and Spanish.
+                With expertise in wholesale distribution operations, strategic sourcing, and domestic trade — fluent in English, French, Haitian Creole, and Spanish.
               </p>
 
               <blockquote className="border-l-2 border-primary pl-5 mb-8">
@@ -66,8 +66,8 @@ const AboutSection = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6 grid grid-cols-4 gap-3">
                 {[
-                  { val: "2008", lbl: "Founded" },
-                  { val: "18+", lbl: "Years" },
+                  { val: "2024", lbl: "Founded" },
+                  { val: "2+", lbl: "Years" },
                   { val: "50+", lbl: "Partners" },
                   { val: "FCL", lbl: "Logistics" },
                 ].map((s) => (

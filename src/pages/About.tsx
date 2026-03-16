@@ -8,8 +8,8 @@ import warehouseImage from "@/assets/warehouse.jpg";
 import heroImage from "@/assets/hero-port.jpg";
 
 const stats = [
-{ value: "2008", label: "Founded" },
-{ value: "18+", label: "Years in Business" },
+{ value: "2024", label: "Founded" },
+{ value: "2+", label: "Years in Business" },
 { value: "3+", label: "Languages Spoken" },
 { value: "50+", label: "Partner Companies" },
 { value: "FCL", label: "Container Logistics" }];
@@ -22,7 +22,7 @@ const values = [
 
 
 const strengths = [
-{ icon: Award, title: "18+ Years of Proven Expertise", desc: "Deep knowledge of USA wholesale distribution and dry food commodity markets since 2008." },
+{ icon: Award, title: "Proven Expertise", desc: "Deep knowledge of USA wholesale distribution and dry food commodity markets since 2024." },
 { icon: Link2, title: "Direct Manufacturer Relationships", desc: "Established partnerships with trusted producers across the USA, ensuring product authenticity and competitive pricing." },
 { icon: Truck, title: "FCL Logistics Excellence", desc: "Full Container Load shipping coordination with reliable, on-time delivery across the USA." },
 { icon: ShieldCheck, title: "Compliance Expertise", desc: "USA regulatory compliance support and trade documentation for seamless domestic operations." },
@@ -45,7 +45,7 @@ const About = () => {
       <Navbar />
       <PageHero
         label="About Us"
-        title="Trusted Wholesale Partner Since 2008"
+        title="Trusted Wholesale Partner Since 2024"
         description="Emri Pinnacle is a leading USA wholesale distributor of containerized dry food commodities and supermarket goods based in Miramar, Florida." />
       
 
@@ -64,7 +64,7 @@ const About = () => {
               </h2>
               <div className="space-y-5 text-muted-foreground leading-relaxed">
                 <p>
-                  Founded in March 2008 by Olivier Richardson, Emri Pinnacle has grown into a trusted leader in USA wholesale distribution of dry food commodities and supermarket goods.
+                  Founded in March 2024 by Olivier Richardson, Emri Pinnacle has grown into a trusted leader in USA wholesale distribution of dry food commodities and supermarket goods.
                 </p>
                 <p>
                   We specialize in containerized dry food commodities and custom supermarket goods for wholesalers, retail chains, and supermarkets across the U.S. Our deep understanding of USA wholesale distribution, combined with hands-on expertise in strategic sourcing and domestic trade, allows us to deliver consistent quality and reliability to every partner we serve.
