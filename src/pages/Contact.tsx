@@ -60,9 +60,9 @@ const Contact = () => {
 
                     <p className="text-sm text-foreground">{c.value}</p>
                     }
-                      {c.extra
-
-                    }
+                      {c.extra && (
+                        <a href={c.extra.href} className="text-sm text-foreground hover:text-primary transition-colors">{c.extra.value}</a>
+                      )}
                     </div>
                   </div>
                 )}
