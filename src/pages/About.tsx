@@ -8,8 +8,8 @@ import warehouseImage from "@/assets/warehouse.jpg";
 import heroImage from "@/assets/hero-port.jpg";
 
 const stats = [
-{ value: "2008", label: "Founded" },
-{ value: "18+", label: "Years in Business" },
+{ value: "2024", label: "Founded" },
+{ value: "2+", label: "Years in Business" },
 { value: "3+", label: "Languages Spoken" },
 { value: "50+", label: "Partner Companies" },
 { value: "FCL", label: "Container Logistics" }];
