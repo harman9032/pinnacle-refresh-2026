@@ -52,7 +52,7 @@ const Footer = () => {
               <a href="mailto:info@emripinnacle.com" className="block hover:text-primary transition-colors">info@emripinnacle.com</a>
               <a href="tel:+17863029420" className="block hover:text-primary transition-colors">(786) 302-9420</a>
               <a href="tel:+13059007195" className="block hover:text-primary transition-colors">(305) 900-7195</a>
-              <p>Miramar, Florida, USA</p>
+              <p>Pembroke Pines, Florida, USA</p>
             </div>
           </div>
         </div>
