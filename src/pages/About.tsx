@@ -46,7 +46,7 @@ const About = () => {
       <PageHero
         label="About Us"
         title="Trusted Wholesale Partner Since 2024"
-        description="Emri Pinnacle is a leading USA wholesale distributor of containerized dry food commodities and supermarket goods based in Pembroke Pines, Florida." />
+        description="Emri Pinnacle is a leading USA wholesale distributor of containerized dry food commodities and supermarket goods based in Miramar, Florida." />
       
 
       {/* Our Story — Horizontal split layout */}
@@ -64,7 +64,7 @@ const About = () => {
               </h2>
               <div className="space-y-5 text-muted-foreground leading-relaxed">
                 <p>
-                  Founded in March 2024 by Eileen Metellus, Emri Pinnacle has grown into a trusted leader in USA wholesale distribution of dry food commodities and supermarket goods.
+                  Founded in July 2024 by Eileen Metellus, Emri Pinnacle has grown into a trusted leader in USA wholesale distribution of dry food commodities and supermarket goods.
                 </p>
                 <p>
                   We specialize in containerized dry food commodities and custom supermarket goods for wholesalers, retail chains, and supermarkets across the U.S. Our deep understanding of USA wholesale distribution, combined with hands-on expertise in strategic sourcing and domestic trade, allows us to deliver consistent quality and reliability to every partner we serve.
