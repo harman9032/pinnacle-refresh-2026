@@ -70,7 +70,7 @@ const About = () => {
                   We specialize in containerized dry food commodities and custom supermarket goods for wholesalers, retail chains, and supermarkets across the U.S. Our deep understanding of USA wholesale distribution, combined with hands-on expertise in strategic sourcing and domestic trade, allows us to deliver consistent quality and reliability to every partner we serve.
                 </p>
                 <p>
-                  From our base in Miramar, Florida, we have built a distribution network that spans the entire USA, serving some of the most respected names in wholesale distribution and retail.
+                  From our base in Pembroke Pines, Florida, we have built a distribution network that spans the entire USA, serving some of the most respected names in wholesale distribution and retail.
                 </p>
               </div>
             </motion.div>
@@ -166,10 +166,10 @@ const About = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {values.map((v, i) => <motion.div key={v.title}
-              initial={{ opacity: 0, y: 30 }}
-              animate={valuesInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.1 * i }}
-              className="text-center p-8 rounded-2xl glass-card hover:border-primary/30 transition-all group">
+            initial={{ opacity: 0, y: 30 }}
+            animate={valuesInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.1 * i }}
+            className="text-center p-8 rounded-2xl glass-card hover:border-primary/30 transition-all group">
               
                 <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-primary/20 transition-colors">
                   <v.icon size={28} className="text-primary" />
