@@ -50,7 +50,7 @@ const Footer = () => {
             <h4 className="text-xs font-bold tracking-[0.2em] uppercase text-foreground mb-4">Contact</h4>
             <div className="space-y-2 text-sm text-muted-foreground">
               <a href="mailto:info@emripinnacle.com" className="block hover:text-primary transition-colors">info@emripinnacle.com</a>
-              <a href="tel:+17863029420" className="block hover:text-primary transition-colors">(786) 302-9420</a>
+              <a href="tel:+19546704886" className="block hover:text-primary transition-colors">(954) 670-4886</a>
               <a href="tel:+13059007195" className="block hover:text-primary transition-colors">(305) 900-7195</a>
               <p>Pembroke Pines, Florida, USA</p>
             </div>

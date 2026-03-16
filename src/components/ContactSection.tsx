@@ -50,7 +50,7 @@ const ContactSection = () => {
                       <Phone size={18} className="text-background" />
                     </div>
                     <div>
-                      <a href="tel:+17863029420" className="text-sm text-background/90 block">(786) 302-9420</a>
+                      <a href="tel:+19546704886" className="text-sm text-background/90 block">(954) 670-4886</a>
                       <a href="tel:+13059007195" className="text-sm text-background/70 block">(305) 900-7195</a>
                     </div>
                   </div>
