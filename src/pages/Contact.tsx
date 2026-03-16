@@ -6,17 +6,17 @@ import PageHero from "@/components/PageHero";
 import { Mail, Phone, MapPin, Clock, Globe, Send } from "lucide-react";
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "info@emripinnacle.com", href: "mailto:info@emripinnacle.com" },
-  { icon: Phone, label: "Phone", value: "(786) 302-9420", href: "tel:+17863029420", extra: { value: "(305) 900-7195", href: "tel:+13059007195" } },
-  { icon: MapPin, label: "Location", value: "Pembroke Pines, Florida, USA" },
-  { icon: Clock, label: "Response Time", value: "Within 24 hours" },
-];
+{ icon: Mail, label: "Email", value: "info@emripinnacle.com", href: "mailto:info@emripinnacle.com" },
+{ icon: Phone, label: "Phone", value: "(786) 302-9420", href: "tel:+17863029420", extra: { value: "(305) 900-7195", href: "tel:+13059007195" } },
+{ icon: MapPin, label: "Location", value: "Miramar, Florida, USA" },
+{ icon: Clock, label: "Response Time", value: "Within 24 hours" }];
+
 
 const Contact = () => {
   const formRef = useRef(null);
   const formInView = useInView(formRef, { once: true, margin: "-50px" });
   const [formData, setFormData] = useState({
-    name: "", company: "", email: "", phone: "", product: "", message: "",
+    name: "", company: "", email: "", phone: "", product: "", message: ""
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -34,8 +34,8 @@ const Contact = () => {
       <PageHero
         label="Contact Us"
         title="Let's Build a Long-Term Partnership"
-        description="Reach out today to discuss your wholesale requirements. Our team is ready to help you find the right products and logistics solutions."
-      />
+        description="Reach out today to discuss your wholesale requirements. Our team is ready to help you find the right products and logistics solutions." />
+      
 
       <section className="py-24" ref={formRef}>
         <div className="container">
@@ -44,28 +44,28 @@ const Contact = () => {
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={formInView ? { opacity: 1, x: 0 } : {}}
-              className="lg:col-span-1"
-            >
+              className="lg:col-span-1">
+              
               <div className="glass-card rounded-2xl p-8 sticky top-28 space-y-8">
                 <h3 className="font-serif text-xl font-bold">Contact Information</h3>
-                {contactInfo.map((c) => (
-                  <div key={c.label} className="flex items-start gap-4">
+                {contactInfo.map((c) =>
+                <div key={c.label} className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                       <c.icon size={18} className="text-primary" />
                     </div>
                     <div>
                       <p className="text-[10px] text-muted-foreground uppercase tracking-wider font-semibold mb-1">{c.label}</p>
-                      {c.href ? (
-                        <a href={c.href} className="text-sm text-foreground hover:text-primary transition-colors">{c.value}</a>
-                      ) : (
-                        <p className="text-sm text-foreground">{c.value}</p>
-                      )}
-                      {c.extra && (
-                        <a href={c.extra.href} className="text-sm text-foreground hover:text-primary transition-colors block">{c.extra.value}</a>
-                      )}
+                      {c.href ?
+                    <a href={c.href} className="text-sm text-foreground hover:text-primary transition-colors">{c.value}</a> :
+
+                    <p className="text-sm text-foreground">{c.value}</p>
+                    }
+                      {c.extra &&
+                    <a href={c.extra.href} className="text-sm text-foreground hover:text-primary transition-colors block">{c.extra.value}</a>
+                    }
                     </div>
                   </div>
-                ))}
+                )}
 
                 <div className="pt-4 border-t border-border/50">
                   <div className="flex items-start gap-4">
@@ -75,9 +75,9 @@ const Contact = () => {
                     <div>
                       <p className="text-[10px] text-muted-foreground uppercase tracking-wider font-semibold mb-2">Languages</p>
                       <div className="flex gap-2 flex-wrap">
-                        {["English", "French", "Haitian Creole", "Spanish"].map((l) => (
-                          <span key={l} className="text-[10px] px-2 py-1 rounded-full bg-primary/10 text-primary font-medium">{l}</span>
-                        ))}
+                        {["English", "French", "Haitian Creole", "Spanish"].map((l) =>
+                        <span key={l} className="text-[10px] px-2 py-1 rounded-full bg-primary/10 text-primary font-medium">{l}</span>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -92,8 +92,8 @@ const Contact = () => {
               initial={{ opacity: 0, x: 30 }}
               animate={formInView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.15 }}
-              className="lg:col-span-2"
-            >
+              className="lg:col-span-2">
+              
               <span className="text-primary text-xs font-semibold tracking-[0.2em] uppercase">Request a Quote</span>
               <h2 className="font-serif text-3xl md:text-4xl font-bold mt-3 mb-3">Tell Us About Your Needs</h2>
               <p className="text-muted-foreground mb-10">
@@ -125,9 +125,9 @@ const Contact = () => {
                   <label className="text-xs font-semibold text-foreground/70 uppercase tracking-wider mb-2 block">Interested In</label>
                   <select value={formData.product} onChange={(e) => setFormData({ ...formData, product: e.target.value })} className={inputClass}>
                     <option value="">Select a product category</option>
-                    {["Rice", "Flour", "Corn", "Vegetable Oil", "Bulgur", "Black Beans", "Pinto Beans", "Custom Supermarket Goods", "Multiple Products", "Other"].map((o) => (
-                      <option key={o} value={o}>{o}</option>
-                    ))}
+                    {["Rice", "Flour", "Corn", "Vegetable Oil", "Bulgur", "Black Beans", "Pinto Beans", "Custom Supermarket Goods", "Multiple Products", "Other"].map((o) =>
+                    <option key={o} value={o}>{o}</option>
+                    )}
                   </select>
                 </div>
                 <div>
@@ -144,8 +144,8 @@ const Contact = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>);
+
 };
 
 export default Contact;
