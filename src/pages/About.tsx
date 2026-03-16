@@ -64,7 +64,7 @@ const About = () => {
               </h2>
               <div className="space-y-5 text-muted-foreground leading-relaxed">
                 <p>
-                  Founded in March 2024 by Olivier Richardson, Emri Pinnacle has grown into a trusted leader in USA wholesale distribution of dry food commodities and supermarket goods.
+                  Founded in March 2024 by Eileen Metellus, Emri Pinnacle has grown into a trusted leader in USA wholesale distribution of dry food commodities and supermarket goods.
                 </p>
                 <p>
                   We specialize in containerized dry food commodities and custom supermarket goods for wholesalers, retail chains, and supermarkets across the U.S. Our deep understanding of USA wholesale distribution, combined with hands-on expertise in strategic sourcing and domestic trade, allows us to deliver consistent quality and reliability to every partner we serve.
