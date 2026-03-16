@@ -46,7 +46,7 @@ const About = () => {
       <PageHero
         label="About Us"
         title="Trusted Wholesale Partner Since 2024"
-        description="Emri Pinnacle is a leading USA wholesale distributor of containerized dry food commodities and supermarket goods based in Miramar, Florida." />
+        description="Emri Pinnacle is a leading USA wholesale distributor of containerized dry food commodities and supermarket goods based in Pembroke Pines, Florida, USA." />
       
 
       {/* Our Story — Horizontal split layout */}
