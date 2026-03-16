@@ -144,7 +144,7 @@ const About = () => {
                 Fluent in English, French, and Haitian Creole (working proficiency in Spanish), she personally leads procurement, logistics, and long-term client relationships to guarantee quality, reliability, and competitive pricing.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                His direct involvement in every aspect of operations ensures that Emri Pinnacle maintains the highest standards of service and builds lasting partnerships with every client.
+                Her direct involvement in every aspect of operations ensures that Emri Pinnacle maintains the highest standards of service and builds lasting partnerships with every client.
               </p>
             </div>
           </motion.div>
