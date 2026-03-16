@@ -138,10 +138,10 @@ const About = () => {
                 Experienced Leadership, Personal Commitment
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Owner & Managing Director Olivier Richardson brings over 14 years of hands-on expertise in USA wholesale distribution operations, strategic sourcing, domestic trade, and high-volume account management.
+                Owner & Managing Director Eileen Metellus brings hands-on expertise in USA wholesale distribution operations, strategic sourcing, domestic trade, and high-volume account management.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Fluent in English, French, and Haitian Creole (working proficiency in Spanish), he personally leads procurement, logistics, and long-term client relationships to guarantee quality, reliability, and competitive pricing.
+                Fluent in English, French, and Haitian Creole (working proficiency in Spanish), she personally leads procurement, logistics, and long-term client relationships to guarantee quality, reliability, and competitive pricing.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 His direct involvement in every aspect of operations ensures that Emri Pinnacle maintains the highest standards of service and builds lasting partnerships with every client.
