@@ -31,7 +31,7 @@ const Clients = () => {
       <PageHero
         label="Clients & Partners"
         title="Trusted by Industry Leaders Nationwide"
-        description="We are proud to serve some of the most respected wholesalers and retail organizations in the United States and beyond."
+        description="We are proud to serve some of the most respected wholesalers and retail organizations in the United States."
       />
 
       {/* Partners */}
@@ -45,7 +45,7 @@ const Clients = () => {
             <span className="text-primary text-xs font-semibold tracking-[0.2em] uppercase">Our Partners</span>
             <h2 className="font-serif text-3xl md:text-4xl font-bold mt-3 mb-4">Building Lasting Partnerships</h2>
             <p className="text-muted-foreground leading-relaxed">
-              We are proud to serve some of the most respected wholesalers and retail organizations in the United States and beyond. Our partnerships are built on trust, reliability, and mutual growth.
+              We are proud to serve some of the most respected wholesalers and retail organizations in the United States. Our partnerships are built on trust, reliability, and mutual growth.
             </p>
           </motion.div>
 
