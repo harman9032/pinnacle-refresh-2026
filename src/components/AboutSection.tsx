@@ -37,7 +37,7 @@ const AboutSection = () => {
               </p>
 
               <p className="text-muted-foreground leading-relaxed mb-8">
-                With over 14 years of expertise in wholesale distribution operations, strategic sourcing, and domestic trade — fluent in English, French, Haitian Creole, and Spanish.
+                With expertise in wholesale distribution operations, strategic sourcing, and domestic trade — fluent in English, French, Haitian Creole, and Spanish.
               </p>
 
               <blockquote className="border-l-2 border-primary pl-5 mb-8">
