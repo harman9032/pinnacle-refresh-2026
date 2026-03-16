@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { Award, Link2, Truck, DollarSign, Languages, MapPin } from "lucide-react";
 
 const reasons = [
-  { icon: Award, title: "14+ Years Proven", desc: "Deep expertise in USA wholesale distribution since 2008." },
+  { icon: Award, title: "Proven Expertise", desc: "Deep expertise in USA wholesale distribution since 2024." },
   { icon: Link2, title: "Direct Relationships", desc: "Manufacturer partnerships cutting out middlemen." },
   { icon: Truck, title: "Reliable FCL", desc: "On-time full container load delivery across the USA." },
   { icon: DollarSign, title: "Competitive Pricing", desc: "Volume purchasing power without sacrificing quality." },

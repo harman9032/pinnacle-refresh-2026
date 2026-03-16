@@ -67,7 +67,7 @@ const AboutSection = () => {
               <div className="absolute bottom-6 left-6 right-6 grid grid-cols-4 gap-3">
                 {[
                   { val: "2024", lbl: "Founded" },
-                  { val: "18+", lbl: "Years" },
+                  { val: "2+", lbl: "Years" },
                   { val: "50+", lbl: "Partners" },
                   { val: "FCL", lbl: "Logistics" },
                 ].map((s) => (
