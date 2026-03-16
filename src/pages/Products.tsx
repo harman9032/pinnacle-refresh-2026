@@ -296,9 +296,7 @@ const Products = () => {
       </section>
 
       {/* Own Brand Banner */}
-      <section className="py-24 bg-secondary/20" ref={brandRef}>
-        <div className="container">
-          
+      
 
 
 
@@ -318,9 +316,11 @@ const Products = () => {
 
 
 
-          
-        </div>
-      </section>
+
+
+
+
+      
 
       {/* CTA */}
       <section className="py-20">
