@@ -22,7 +22,7 @@ const values = [
 
 
 const strengths = [
-{ icon: Award, title: "18+ Years of Proven Expertise", desc: "Deep knowledge of USA wholesale distribution and dry food commodity markets since 2008." },
+{ icon: Award, title: "Proven Expertise", desc: "Deep knowledge of USA wholesale distribution and dry food commodity markets since 2024." },
 { icon: Link2, title: "Direct Manufacturer Relationships", desc: "Established partnerships with trusted producers across the USA, ensuring product authenticity and competitive pricing." },
 { icon: Truck, title: "FCL Logistics Excellence", desc: "Full Container Load shipping coordination with reliable, on-time delivery across the USA." },
 { icon: ShieldCheck, title: "Compliance Expertise", desc: "USA regulatory compliance support and trade documentation for seamless domestic operations." },
