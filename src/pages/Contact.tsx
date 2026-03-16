@@ -60,8 +60,8 @@ const Contact = () => {
 
                     <p className="text-sm text-foreground">{c.value}</p>
                     }
-                      {c.extra &&
-                    <a href={c.extra.href} className="text-sm text-foreground hover:text-primary transition-colors block">{c.extra.value}</a>
+                      {c.extra
+
                     }
                     </div>
                   </div>
