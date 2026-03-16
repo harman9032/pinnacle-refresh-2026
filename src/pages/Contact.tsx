@@ -8,7 +8,7 @@ import { Mail, Phone, MapPin, Clock, Globe, Send } from "lucide-react";
 const contactInfo = [
 { icon: Mail, label: "Email", value: "info@emripinnacle.com", href: "mailto:info@emripinnacle.com" },
 { icon: Phone, label: "Phone", value: "(954) 670-4886", href: "tel:+19546704886", extra: { value: "(305) 900-7195", href: "tel:+13059007195" } },
-{ icon: MapPin, label: "Location", value: "Miramar, Florida, USA" },
+{ icon: MapPin, label: "Location", value: "Pembroke Pines, Florida, USA" },
 { icon: Clock, label: "Response Time", value: "Within 24 hours" }];
 
 
