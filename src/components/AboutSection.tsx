@@ -33,7 +33,7 @@ const AboutSection = () => {
               </h2>
 
               <p className="text-muted-foreground leading-relaxed mb-4">
-                A Trusted Leader in USA Wholesale Distribution Founded in July 2024, L'Infini Distributions has become a trusted leader in USA wholesale distribution of dry food commodities and supermarket goods. With 18 years of expertise in distribution operations, strategic sourcing, and domestic trade, the company is committed to delivering consistent quality and reliability through professional procurement processes and strong, long-term client relationships.
+                A Trusted Leader in USA Wholesale Distribution Founded in July 2024, Emri Pinnacle has become a trusted leader in USA wholesale distribution of dry food commodities and supermarket goods. With 18 years of expertise in distribution operations, strategic sourcing, and domestic trade, the company is committed to delivering consistent quality and reliability through professional procurement processes and strong, long-term client relationships.
               </p>
 
               
