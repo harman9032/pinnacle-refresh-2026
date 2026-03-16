@@ -31,7 +31,7 @@ const Clients = () => {
       <PageHero
         label="Clients & Partners"
         title="Trusted by Industry Leaders Nationwide"
-        description="We are proud to serve some of the most respected wholesalers and retail organizations in the United States and beyond."
+        description="We are proud to serve some of the most respected wholesalers and retail organizations in the United States."
       />
 
       {/* Partners */}
