@@ -33,7 +33,7 @@ const AboutSection = () => {
               </h2>
 
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Founded by Olivier Richardson in South Florida, Emri Pinnacle has become a trusted leader in USA wholesale distribution of dry food commodities and supermarket goods.
+                Founded by Eileen Metellus in South Florida, Emri Pinnacle has become a trusted leader in USA wholesale distribution of dry food commodities and supermarket goods.
               </p>
 
               <p className="text-muted-foreground leading-relaxed mb-8">
