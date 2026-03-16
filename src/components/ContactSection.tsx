@@ -49,10 +49,7 @@ const ContactSection = () => {
                     <div className="w-10 h-10 rounded-xl bg-background/10 flex items-center justify-center">
                       <Phone size={18} className="text-background" />
                     </div>
-                    <div>
-                      <a href="tel:+19546704886" className="text-sm text-background/90 block">(954) 670-4886</a>
-                      <a href="tel:+13059007195" className="text-sm text-background/70 block">(305) 900-7195</a>
-                    </div>
+                    <a href="tel:+19546704886" className="text-sm text-background/90">(954) 670-4886</a>
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-xl bg-background/10 flex items-center justify-center">

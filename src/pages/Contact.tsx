@@ -7,7 +7,7 @@ import { Mail, Phone, MapPin, Clock, Globe, Send } from "lucide-react";
 
 const contactInfo = [
 { icon: Mail, label: "Email", value: "info@emripinnacle.com", href: "mailto:info@emripinnacle.com" },
-{ icon: Phone, label: "Phone", value: "(954) 670-4886", href: "tel:+19546704886", extra: { value: "(305) 900-7195", href: "tel:+13059007195" } },
+{ icon: Phone, label: "Phone", value: "(954) 670-4886", href: "tel:+19546704886" },
 { icon: MapPin, label: "Location", value: "Pembroke Pines, Florida, USA" },
 { icon: Clock, label: "Response Time", value: "Within 24 hours" }];
 
@@ -60,9 +60,6 @@ const Contact = () => {
 
                     <p className="text-sm text-foreground">{c.value}</p>
                     }
-                      {'extra' in c && c.extra ? (
-                        <a href={c.extra.href} className="text-sm text-foreground hover:text-primary transition-colors">{c.extra.value}</a>
-                      ) : null}
                     </div>
                   </div>
                 )}
