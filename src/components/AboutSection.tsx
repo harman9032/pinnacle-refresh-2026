@@ -29,7 +29,7 @@ const AboutSection = () => {
               <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight mb-6">
                 Trusted Leader in{" "}
                 <span className="text-gradient-gold">Wholesale Distribution</span>{" "}
-                Since 2008
+                Since 2024
               </h2>
 
               <p className="text-muted-foreground leading-relaxed mb-4">
