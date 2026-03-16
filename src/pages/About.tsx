@@ -45,7 +45,7 @@ const About = () => {
       <Navbar />
       <PageHero
         label="About Us"
-        title="Trusted Wholesale Partner Since 2008"
+        title="Trusted Wholesale Partner Since 2024"
         description="Emri Pinnacle is a leading USA wholesale distributor of containerized dry food commodities and supermarket goods based in Miramar, Florida." />
       
 
