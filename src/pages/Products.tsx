@@ -212,6 +212,41 @@ const products = [
   desc: "Pedigree Adult Complete Nutrition Dog Food. 55 Lb bag. Wholesale bulk for pet supply retailers.",
   img: "/lovable-uploads/Pedigree_Adult_Complete_Nutrition_Dog_Food_55lb.jpeg",
   cat: "Pet Food"
+},
+{
+  brand: "Emri Pinnacle",
+  name: "Smart Deadbolt Lock — Silver & Black Dual Pack",
+  desc: "Touchscreen keypad smart deadbolt with key backup. Available in silver and black finishes. Bulk quantities for distributors.",
+  img: "/lovable-uploads/Smart_Deadbolt_Lock_Dual.jpeg",
+  cat: "Smart Locks"
+},
+{
+  brand: "Emri Pinnacle",
+  name: "Smart Door Handle Lock — Black",
+  desc: "Sleek fingerprint-enabled smart door handle lock with illuminated keypad. Ideal for residential and commercial wholesale.",
+  img: "/lovable-uploads/Smart_Door_Lock_Handle.jpeg",
+  cat: "Smart Locks"
+},
+{
+  brand: "Emri Pinnacle",
+  name: "Touchscreen Deadbolt Lock — Silver",
+  desc: "Modern touchscreen deadbolt with key cylinder backup. Front and rear view. Wholesale pallet quantities available.",
+  img: "/lovable-uploads/Smart_Deadbolt_Keypad.jpeg",
+  cat: "Smart Locks"
+},
+{
+  brand: "Emri Pinnacle",
+  name: "Padded Folding Chair — Burgundy",
+  desc: "Commercial-grade padded folding chair with burgundy fabric seat and back. Steel frame. Bulk carton quantities.",
+  img: "/lovable-uploads/Padded_Folding_Chair_Burgundy.jpeg",
+  cat: "Furniture"
+},
+{
+  brand: "Emri Pinnacle",
+  name: "Folding Chairs — White/Gray Bulk",
+  desc: "Heavy-duty plastic folding chairs in white/gray. Stackable design for easy storage. Full pallet wholesale orders.",
+  img: "/lovable-uploads/Folding_Chairs_White_Bulk.jpeg",
+  cat: "Furniture"
 }];
 
 
