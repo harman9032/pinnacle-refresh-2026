@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-port.jpg";
 
 const counters = [
-  { value: "18+", label: "Years" },
-  { value: "50+", label: "Partners" },
+  { value: "2+", label: "Years" },
+  { value: "20+", label: "Partners" },
   { value: "FCL", label: "Logistics" },
   { value: "3+", label: "Languages" },
 ];
