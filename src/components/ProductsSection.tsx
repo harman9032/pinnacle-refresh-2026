@@ -11,6 +11,11 @@ const featured = [
   { brand: "Alberto", name: "Bulgur Cracked Wheat", desc: "A-1 Premium Quality, 50 Lbs", img: "/lovable-uploads/Alberto_Bulgur_sack.png" },
   { brand: "Don Lucas", name: "Black Beans", desc: "Premium Triple-Cleaned, 50 Lbs", img: "/lovable-uploads/Don_Lucas_black_beans.png" },
   { brand: "Pringles", name: "Assorted Flavors", desc: "Multi-pack variety for retail", img: "/lovable-uploads/Pringlescombo.jpg" },
+  { brand: "Emri Pinnacle", name: "Smart Deadbolt Lock", desc: "Touchscreen keypad, silver & black", img: "/lovable-uploads/Smart_Deadbolt_Lock_Dual.jpeg" },
+  { brand: "Emri Pinnacle", name: "Smart Door Handle Lock", desc: "Fingerprint-enabled smart lock", img: "/lovable-uploads/Smart_Door_Lock_Handle.jpeg" },
+  { brand: "Emri Pinnacle", name: "Touchscreen Deadbolt", desc: "Modern deadbolt with key backup", img: "/lovable-uploads/Smart_Deadbolt_Keypad.jpeg" },
+  { brand: "Emri Pinnacle", name: "Padded Folding Chair", desc: "Commercial-grade, burgundy fabric", img: "/lovable-uploads/Padded_Folding_Chair_Burgundy.jpeg" },
+  { brand: "Emri Pinnacle", name: "Folding Chairs Bulk", desc: "Stackable white/gray, full pallet", img: "/lovable-uploads/Folding_Chairs_White_Bulk.jpeg" },
 ];
 
 const ProductsSection = () => {
