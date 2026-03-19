@@ -42,7 +42,7 @@ const ProductsSection = () => {
               to="/products"
               className="inline-flex items-center gap-2 text-sm text-primary font-semibold hover:gap-3 transition-all"
             >
-              View All 26 Products <ArrowRight size={14} />
+              View All 31 Products <ArrowRight size={14} />
             </Link>
           </motion.div>
         </div>
