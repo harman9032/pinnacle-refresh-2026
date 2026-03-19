@@ -7,9 +7,6 @@ import { Building2, ShieldCheck, TrendingUp, ArrowRight } from "lucide-react";
 
 const partners = [
   { name: "Trujillo & Sons, Inc.", type: "Wholesale Distribution" },
-  { name: "Sam's Club Wholesale", type: "Retail Wholesale" },
-  { name: "F. Garcia Wholesale & Export, Inc.", type: "Wholesale & Export" },
-  { name: "Family & Son, Inc.", type: "Wholesale Distribution" },
   { name: "Marché TiTony, Inc.", type: "Retail & Wholesale" },
 ];
 
