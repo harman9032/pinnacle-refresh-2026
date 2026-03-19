@@ -6,8 +6,9 @@ import PageHero from "@/components/PageHero";
 import { Building2, ShieldCheck, TrendingUp, ArrowRight } from "lucide-react";
 
 const partners = [
-  { name: "Trujillo & Sons, Inc.", type: "Wholesale Distribution" },
-  { name: "Marché TiTony, Inc.", type: "Retail & Wholesale" },
+  { name: "Sam's Club Wholesale", type: "Wholesale & Retail" },
+  { name: "F. Garcia Wholesale & Export", type: "Wholesale & Export" },
+  { name: "Family & Son, Inc.", type: "Wholesale Distribution" },
 ];
 
 const benefits = [
