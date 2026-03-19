@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 const featured = [
-  { brand: "Emri Pinnacle", name: "Black Beans", desc: "50 LBS bags, superior quality", img: "/lovable-uploads/Black_beans.png" },
+  
   { brand: "Alberto", name: "Pinto Beans", desc: "A-1 Premium Quality, 50 Lbs", img: "/lovable-uploads/Alberto_Pinto_Beans_sack.png" },
   { brand: "Americas", name: "Black Beans 100lb", desc: "Premium for high-volume distribution", img: "/lovable-uploads/Americas_Black_Beans_100lb.png" },
   { brand: "Family", name: "Long Grain Rice 50lb", desc: "Extra Fancy Long Grain Rice", img: "/lovable-uploads/Family_Rice_Extra_Fancy_Long_Grain_50lb.jpeg" },
