@@ -6,235 +6,249 @@ import PageHero from "@/components/PageHero";
 import { ArrowRight, Package } from "lucide-react";
 
 type Category =
-  | "All"
-  | "Beans & Legumes"
-  | "Grains & Cereals"
-  | "Cooking Oils"
-  | "Canned Goods"
-  | "Beverages"
-  | "Snacks & Noodles"
-  | "Pet Food"
-  | "Smart Locks"
-  | "Furniture";
+"All" |
+"Beans & Legumes" |
+"Grains & Cereals" |
+"Cooking Oils" |
+"Canned Goods" |
+"Beverages" |
+"Snacks & Noodles" |
+"Pet Food" |
+"Smart Locks" |
+"Furniture";
 
-const categories: { label: Category; count: number }[] = [
-  { label: "All", count: 31 },
-  { label: "Beans & Legumes", count: 11 },
-  { label: "Grains & Cereals", count: 6 },
-  { label: "Cooking Oils", count: 3 },
-  { label: "Canned Goods", count: 1 },
-  { label: "Beverages", count: 2 },
-  { label: "Snacks & Noodles", count: 2 },
-  { label: "Pet Food", count: 1 },
-  { label: "Smart Locks", count: 3 },
-  { label: "Furniture", count: 2 },
-];
+const categories: {label: Category;count: number;}[] = [
+{ label: "All", count: 31 },
+{ label: "Beans & Legumes", count: 11 },
+{ label: "Grains & Cereals", count: 6 },
+{ label: "Cooking Oils", count: 3 },
+{ label: "Canned Goods", count: 1 },
+{ label: "Beverages", count: 2 },
+{ label: "Snacks & Noodles", count: 2 },
+{ label: "Pet Food", count: 1 },
+{ label: "Smart Locks", count: 3 },
+{ label: "Furniture", count: 2 }];
+
 
 const products = [
-  {
-    brand: "Alberto",
-    name: "Alberto Pinto Beans",
-    desc: "Alberto A-1 Premium Quality Pinto Beans (Frijoles Pintos). 50 Lbs / 22.68 Kg. Distributed by Trujillo & Sons, Miami, FL.",
-    img: "/lovable-uploads/Alberto_Pinto_Beans_sack.png",
-    cat: "Beans & Legumes",
-  },
-  {
-    brand: "Alberto",
-    name: "Alberto Michigan Black Beans",
-    desc: "Alberto A-1 Premium Quality Michigan Black Beans (Frijoles Negros). 50 Lbs / 22.68 Kg. Product of U.S.A.",
-    img: "/lovable-uploads/Alberto_Michigan_Black_Beans_sack_new.png",
-    cat: "Beans & Legumes",
-  },
-  {
-    brand: "Americas",
-    name: "Americas Black Beans 100lb",
-    desc: "Americas Brand Premium Black Beans. 100 Lb bulk sack for high-volume wholesale distribution.",
-    img: "/lovable-uploads/Americas_Black_Beans_100lb.png",
-    cat: "Beans & Legumes",
-  },
-  {
-    brand: "Don Lucas",
-    name: "Don Lucas Black Beans",
-    desc: "Don Lucas Premium Triple-Cleaned Black Beans. Net Wt. 50 Lbs / 22.89 Kg. Produce of U.S.A. By Trujillo & Sons Inc., Miami, FL.",
-    img: "/lovable-uploads/Don_Lucas_black_beans.png",
-    cat: "Beans & Legumes",
-  },
-  {
-    brand: "Don Lucas",
-    name: "Don Lucas Pinto Beans",
-    desc: "Don Lucas Premium Triple-Cleaned Pinto Beans. Produce of U.S.A. Quality Food Products by Trujillo & Sons Inc.",
-    img: "/lovable-uploads/Don_Lucas_pinto_beans_sack.png",
-    cat: "Beans & Legumes",
-  },
-  {
-    brand: "F. Garcia",
-    name: "F. Garcia Michigan Black Beans 50lb",
-    desc: "F. Garcia Michigan Black Beans. 50 Lb sack. Premium quality beans for wholesale and supermarket distribution.",
-    img: "/lovable-uploads/F_Garcia_Michigan_Black_Beans_50lb.png",
-    cat: "Beans & Legumes",
-  },
-  {
-    brand: "F. Garcia",
-    name: "F. Garcia Pinto Beans Super Clean 50lb",
-    desc: "F. Garcia Pinto Beans Super Clean. 50 Lb sack. Triple-cleaned premium quality for commercial use.",
-    img: "/lovable-uploads/F_Garcia_Pinto_Beans_Super_Clean_50lb.png",
-    cat: "Beans & Legumes",
-  },
-  {
-    brand: "Family",
-    name: "Family Pinto Beans 100lb",
-    desc: "Family Brand Pinto Beans. 100 Lb bulk sack. Ideal for high-volume food service and wholesale buyers.",
-    img: "/lovable-uploads/Family_Pinto_Beans_100lb.png",
-    cat: "Beans & Legumes",
-  },
-  {
-    brand: "Mariposa",
-    name: "Mariposa Premium Black Beans 50lb",
-    desc: "Mariposa Premium Black Beans. 50 Lb sack. Select quality beans for wholesale distribution.",
-    img: "/lovable-uploads/Mariposa_Premium_Black_Beans_50lb.png",
-    cat: "Beans & Legumes",
-  },
-  {
-    brand: "Alberto",
-    name: "Alberto Bulgur Cracked Wheat",
-    desc: "Alberto Bulgur Cracked Wheat. 50 Lbs / 22.68 Kg. A-1 Premium Quality Food Products.",
-    img: "/lovable-uploads/Alberto_Bulgur_sack.png",
-    cat: "Grains & Cereals",
-  },
-  {
-    brand: "Alberto",
-    name: "Alberto Coarse Cornmeal Bag",
-    desc: "Alberto Coarse Cornmeal in branded packaging. 50 Lbs / 22.68 Kgs. A-1 Premium Quality. Product of USA.",
-    img: "/lovable-uploads/Alberto_Coarse_Cornmeal_bag.png",
-    cat: "Grains & Cereals",
-  },
-  {
-    brand: "Alberto",
-    name: "Alberto Super Corn Grits 50lb",
-    desc: "Alberto Super Corn Grits. 50 Lb bag. A-1 Premium Quality. Ideal for food service and retail.",
-    img: "/lovable-uploads/Alberto_Super_Corn_Grits_50lb.png",
-    cat: "Grains & Cereals",
-  },
-  {
-    brand: "Alberto",
-    name: "Alberto Corn Flakes",
-    desc: "Alberto Corn Flakes. A-1 Premium Quality. Since 1956. Available in bulk container quantities.",
-    img: "/lovable-uploads/Alberto_Corn_Flakes_with_strawberries.png",
-    cat: "Grains & Cereals",
-  },
-  {
-    brand: "Family",
-    name: "Family Bulgur Wheat 50lb",
-    desc: "Family Brand Bulgur Wheat. 50 Lb bag. Premium cracked wheat for wholesale buyers.",
-    img: "/lovable-uploads/Family_Bulgur_Wheat_50lb.png",
-    cat: "Grains & Cereals",
-  },
-  {
-    brand: "Family",
-    name: "Family Rice Extra Fancy Long Grain 50lb",
-    desc: "Family Brand Extra Fancy Long Grain Rice. 50 Lb bag. Premium quality for supermarket distribution.",
-    img: "/lovable-uploads/Family_Rice_Extra_Fancy_Long_Grain_50lb.jpeg",
-    cat: "Grains & Cereals",
-  },
-  {
-    brand: "Alberto",
-    name: "Alberto Cooking Oils",
-    desc: "Alberto Pure Vegetable Oil & Pure Corn Oil (Aceite de Maiz). High-quality cooking oils in commercial volumes.",
-    img: "/lovable-uploads/Alberto_cooking_oils.png",
-    cat: "Cooking Oils",
-  },
-  {
-    brand: "Alberto",
-    name: "Alberto Vegetable Oils",
-    desc: "Alberto Pure Vegetable Oil. High-quality cooking oils in commercial volumes.",
-    img: "/lovable-uploads/albertovegeoil.jpg",
-    cat: "Cooking Oils",
-  },
-  {
-    brand: "Family",
-    name: "Family Vegetable Canola Corn Oil Bottles",
-    desc: "Family Brand Vegetable, Canola & Corn Oil. Retail-ready bottle packaging for supermarket shelves.",
-    img: "/lovable-uploads/Family_Vegetable_Canola_Corn_Oil_Bottles.png",
-    cat: "Cooking Oils",
-  },
-  {
-    brand: "Alberto",
-    name: "Alberto Tomato Paste",
-    desc: "Alberto 100% Natural Tomato Paste. Net Wt. 6 Lb. 15 Oz (3.15 KG). A-1 Premium Quality since 1966.",
-    img: "/lovable-uploads/Albertotomato.jpg",
-    cat: "Canned Goods",
-  },
-  {
-    brand: "Pringles",
-    name: "Pringles Assorted Flavors Pack",
-    desc: "Pringles Assorted Flavors. Multi-pack variety for retail and convenience store distribution.",
-    img: "/lovable-uploads/Pringlescombo.jpg",
-    cat: "Snacks & Noodles",
-  },
-  {
-    brand: "Gatorade",
-    name: "Gatorade Mixed Flavor Pallet",
-    desc: "Gatorade Mixed Flavor Pallet. Full pallet quantities for high-volume distribution and retail chains.",
-    img: "/lovable-uploads/Gatorade_Mixed_Flavor_Pallet.jpeg",
-    cat: "Beverages",
-  },
-  {
-    brand: "Jumex",
-    name: "Jumex Assorted Fruit Cans Pack",
-    desc: "Jumex Assorted Fruit Nectar. Multi-flavor can pack. Popular across Latin American markets.",
-    img: "/lovable-uploads/Jumex_Assorted_Fruit_Nectar_Cans_Pack.jpeg",
-    cat: "Beverages",
-  },
-  {
-    brand: "Nissin",
-    name: "Nissin Top Ramen Chicken & Mixed Flavors",
-    desc: "Nissin Top Ramen Chicken Flavor. Bulk pack for wholesale and retail distribution.",
-    img: "/lovable-uploads/Nissin_Top_Ramen_Chicken_Flavor_Pack.jpeg",
-    cat: "Snacks & Noodles",
-  },
-  {
-    brand: "Pedigree",
-    name: "Pedigree Adult Complete Nutrition 55lb",
-    desc: "Pedigree Adult Complete Nutrition Dog Food. 55 Lb bag. Wholesale bulk for pet supply retailers.",
-    img: "/lovable-uploads/Pedigree_Adult_Complete_Nutrition_Dog_Food_55lb.jpeg",
-    cat: "Pet Food",
-  },
-  {
-    brand: "Emri Pinnacle",
-    name: "Smart Deadbolt Lock — Silver & Black Dual Pack",
-    desc: "Touchscreen keypad smart deadbolt with key backup. Available in silver and black finishes. Bulk quantities for distributors.",
-    img: "/lovable-uploads/Smart_Deadbolt_Lock_Dual.jpeg",
-    cat: "Smart Locks",
-  },
-  {
-    brand: "Emri Pinnacle",
-    name: "Smart Door Handle Lock — Black",
-    desc: "Sleek fingerprint-enabled smart door handle lock with illuminated keypad. Ideal for residential and commercial wholesale.",
-    img: "/lovable-uploads/Smart_Door_Lock_Handle.jpeg",
-    cat: "Smart Locks",
-  },
-  {
-    brand: "Emri Pinnacle",
-    name: "Touchscreen Deadbolt Lock — Silver",
-    desc: "Modern touchscreen deadbolt with key cylinder backup. Front and rear view. Wholesale pallet quantities available.",
-    img: "/lovable-uploads/Smart_Deadbolt_Keypad.jpeg",
-    cat: "Smart Locks",
-  },
-  {
-    brand: "Emri Pinnacle",
-    name: "Padded Folding Chair — Burgundy",
-    desc: "Commercial-grade padded folding chair with burgundy fabric seat and back. Steel frame. Bulk carton quantities.",
-    img: "/lovable-uploads/Padded_Folding_Chair_Burgundy.jpeg",
-    cat: "Furniture",
-  },
-  {
-    brand: "Emri Pinnacle",
-    name: "Folding Chairs — White/Gray Bulk",
-    desc: "Heavy-duty plastic folding chairs in white/gray. Stackable design for easy storage. Full pallet wholesale orders.",
-    img: "/lovable-uploads/Folding_Chairs_White_Bulk.jpeg",
-    cat: "Furniture",
-  },
-];
+{
+  brand: "L'Infini",
+  name: "L'Infini Brand Black Beans",
+  desc: "Our own branded black beans. 50 LBS / 22.68 KGS bags, superior quality, packed for L'Infini Distributions LLC. Miami, Florida.",
+  img: "/lovable-uploads/Black_beans.png",
+  cat: "Beans & Legumes"
+},
+{
+  brand: "L'Infini",
+  name: "L'Infini Brand Pinto Beans",
+  desc: "Our own branded pinto beans. 50 LBS / 22.68 KGS bags, superior quality, packed for L'Infini Distributions LLC. Miami, Florida.",
+  img: "/lovable-uploads/linfinipintobeans.jpg",
+  cat: "Beans & Legumes"
+},
+{
+  brand: "Alberto",
+  name: "Alberto Pinto Beans",
+  desc: "Alberto A-1 Premium Quality Pinto Beans (Frijoles Pintos). 50 Lbs / 22.68 Kg. Distributed by Trujillo & Sons, Miami, FL.",
+  img: "/lovable-uploads/Alberto_Pinto_Beans_sack.png",
+  cat: "Beans & Legumes"
+},
+{
+  brand: "Alberto",
+  name: "Alberto Michigan Black Beans",
+  desc: "Alberto A-1 Premium Quality Michigan Black Beans (Frijoles Negros). 50 Lbs / 22.68 Kg. Product of U.S.A.",
+  img: "/lovable-uploads/Alberto_Michigan_Black_Beans_sack_new.png",
+  cat: "Beans & Legumes"
+},
+{
+  brand: "Americas",
+  name: "Americas Black Beans 100lb",
+  desc: "Americas Brand Premium Black Beans. 100 Lb bulk sack for high-volume wholesale distribution.",
+  img: "/lovable-uploads/Americas_Black_Beans_100lb.png",
+  cat: "Beans & Legumes"
+},
+{
+  brand: "Don Lucas",
+  name: "Don Lucas Black Beans",
+  desc: "Don Lucas Premium Triple-Cleaned Black Beans. Net Wt. 50 Lbs / 22.89 Kg. Produce of U.S.A. By Trujillo & Sons Inc., Miami, FL.",
+  img: "/lovable-uploads/Don_Lucas_black_beans.png",
+  cat: "Beans & Legumes"
+},
+{
+  brand: "Don Lucas",
+  name: "Don Lucas Pinto Beans",
+  desc: "Don Lucas Premium Triple-Cleaned Pinto Beans. Produce of U.S.A. Quality Food Products by Trujillo & Sons Inc.",
+  img: "/lovable-uploads/Don_Lucas_pinto_beans_sack.png",
+  cat: "Beans & Legumes"
+},
+{
+  brand: "F. Garcia",
+  name: "F. Garcia Michigan Black Beans 50lb",
+  desc: "F. Garcia Michigan Black Beans. 50 Lb sack. Premium quality beans for wholesale and supermarket distribution.",
+  img: "/lovable-uploads/F_Garcia_Michigan_Black_Beans_50lb.png",
+  cat: "Beans & Legumes"
+},
+{
+  brand: "F. Garcia",
+  name: "F. Garcia Pinto Beans Super Clean 50lb",
+  desc: "F. Garcia Pinto Beans Super Clean. 50 Lb sack. Triple-cleaned premium quality for commercial use.",
+  img: "/lovable-uploads/F_Garcia_Pinto_Beans_Super_Clean_50lb.png",
+  cat: "Beans & Legumes"
+},
+{
+  brand: "Family",
+  name: "Family Pinto Beans 100lb",
+  desc: "Family Brand Pinto Beans. 100 Lb bulk sack. Ideal for high-volume food service and wholesale buyers.",
+  img: "/lovable-uploads/Family_Pinto_Beans_100lb.png",
+  cat: "Beans & Legumes"
+},
+{
+  brand: "Mariposa",
+  name: "Mariposa Premium Black Beans 50lb",
+  desc: "Mariposa Premium Black Beans. 50 Lb sack. Select quality beans for wholesale distribution.",
+  img: "/lovable-uploads/Mariposa_Premium_Black_Beans_50lb.png",
+  cat: "Beans & Legumes"
+},
+{
+  brand: "Alberto",
+  name: "Alberto Bulgur Cracked Wheat",
+  desc: "Alberto Bulgur Cracked Wheat. 50 Lbs / 22.68 Kg. A-1 Premium Quality Food Products.",
+  img: "/lovable-uploads/Alberto_Bulgur_sack.png",
+  cat: "Grains & Cereals"
+},
+{
+  brand: "Alberto",
+  name: "Alberto Coarse Cornmeal Bag",
+  desc: "Alberto Coarse Cornmeal in branded packaging. 50 Lbs / 22.68 Kgs. A-1 Premium Quality. Product of USA.",
+  img: "/lovable-uploads/Alberto_Coarse_Cornmeal_bag.png",
+  cat: "Grains & Cereals"
+},
+{
+  brand: "Alberto",
+  name: "Alberto Super Corn Grits 50lb",
+  desc: "Alberto Super Corn Grits. 50 Lb bag. A-1 Premium Quality. Ideal for food service and retail.",
+  img: "/lovable-uploads/Alberto_Super_Corn_Grits_50lb.png",
+  cat: "Grains & Cereals"
+},
+{
+  brand: "Alberto",
+  name: "Alberto Corn Flakes",
+  desc: "Alberto Corn Flakes. A-1 Premium Quality. Since 1956. Available in bulk container quantities.",
+  img: "/lovable-uploads/Alberto_Corn_Flakes_with_strawberries.png",
+  cat: "Grains & Cereals"
+},
+{
+  brand: "Family",
+  name: "Family Bulgur Wheat 50lb",
+  desc: "Family Brand Bulgur Wheat. 50 Lb bag. Premium cracked wheat for wholesale buyers.",
+  img: "/lovable-uploads/Family_Bulgur_Wheat_50lb.png",
+  cat: "Grains & Cereals"
+},
+{
+  brand: "Family",
+  name: "Family Rice Extra Fancy Long Grain 50lb",
+  desc: "Family Brand Extra Fancy Long Grain Rice. 50 Lb bag. Premium quality for supermarket distribution.",
+  img: "/lovable-uploads/Family_Rice_Extra_Fancy_Long_Grain_50lb.jpeg",
+  cat: "Grains & Cereals"
+},
+{
+  brand: "Alberto",
+  name: "Alberto Cooking Oils",
+  desc: "Alberto Pure Vegetable Oil & Pure Corn Oil (Aceite de Maiz). High-quality cooking oils in commercial volumes.",
+  img: "/lovable-uploads/Alberto_cooking_oils.png",
+  cat: "Cooking Oils"
+},
+{
+  brand: "Alberto",
+  name: "Alberto Vegetable Oils",
+  desc: "Alberto Pure Vegetable Oil. High-quality cooking oils in commercial volumes.",
+  img: "/lovable-uploads/albertovegeoil.jpg",
+  cat: "Cooking Oils"
+},
+{
+  brand: "Family",
+  name: "Family Vegetable Canola Corn Oil Bottles",
+  desc: "Family Brand Vegetable, Canola & Corn Oil. Retail-ready bottle packaging for supermarket shelves.",
+  img: "/lovable-uploads/Family_Vegetable_Canola_Corn_Oil_Bottles.png",
+  cat: "Cooking Oils"
+},
+{
+  brand: "Alberto",
+  name: "Alberto Tomato Paste",
+  desc: "Alberto 100% Natural Tomato Paste. Net Wt. 6 Lb. 15 Oz (3.15 KG). A-1 Premium Quality since 1966.",
+  img: "/lovable-uploads/Albertotomato.jpg",
+  cat: "Canned Goods"
+},
+{
+  brand: "Pringles",
+  name: "Pringles Assorted Flavors Pack",
+  desc: "Pringles Assorted Flavors. Multi-pack variety for retail and convenience store distribution.",
+  img: "/lovable-uploads/Pringlescombo.jpg",
+  cat: "Snacks & Noodles"
+},
+{
+  brand: "Gatorade",
+  name: "Gatorade Mixed Flavor Pallet",
+  desc: "Gatorade Mixed Flavor Pallet. Full pallet quantities for high-volume distribution and retail chains.",
+  img: "/lovable-uploads/Gatorade_Mixed_Flavor_Pallet.jpeg",
+  cat: "Beverages"
+},
+{
+  brand: "Jumex",
+  name: "Jumex Assorted Fruit Cans Pack",
+  desc: "Jumex Assorted Fruit Nectar. Multi-flavor can pack. Popular across Latin American markets.",
+  img: "/lovable-uploads/Jumex_Assorted_Fruit_Nectar_Cans_Pack.jpeg",
+  cat: "Beverages"
+},
+{
+  brand: "Nissin",
+  name: "Nissin Top Ramen Chicken & Mixed Flavors",
+  desc: "Nissin Top Ramen Chicken Flavor. Bulk pack for wholesale and retail distribution.",
+  img: "/lovable-uploads/Nissin_Top_Ramen_Chicken_Flavor_Pack.jpeg",
+  cat: "Snacks & Noodles"
+},
+{
+  brand: "Pedigree",
+  name: "Pedigree Adult Complete Nutrition 55lb",
+  desc: "Pedigree Adult Complete Nutrition Dog Food. 55 Lb bag. Wholesale bulk for pet supply retailers.",
+  img: "/lovable-uploads/Pedigree_Adult_Complete_Nutrition_Dog_Food_55lb.jpeg",
+  cat: "Pet Food"
+},
+{
+  brand: "Emri Pinnacle",
+  name: "Smart Deadbolt Lock — Silver & Black Dual Pack",
+  desc: "Touchscreen keypad smart deadbolt with key backup. Available in silver and black finishes. Bulk quantities for distributors.",
+  img: "/lovable-uploads/Smart_Deadbolt_Lock_Dual.jpeg",
+  cat: "Smart Locks"
+},
+{
+  brand: "Emri Pinnacle",
+  name: "Smart Door Handle Lock — Black",
+  desc: "Sleek fingerprint-enabled smart door handle lock with illuminated keypad. Ideal for residential and commercial wholesale.",
+  img: "/lovable-uploads/Smart_Door_Lock_Handle.jpeg",
+  cat: "Smart Locks"
+},
+{
+  brand: "Emri Pinnacle",
+  name: "Touchscreen Deadbolt Lock — Silver",
+  desc: "Modern touchscreen deadbolt with key cylinder backup. Front and rear view. Wholesale pallet quantities available.",
+  img: "/lovable-uploads/Smart_Deadbolt_Keypad.jpeg",
+  cat: "Smart Locks"
+},
+{
+  brand: "Emri Pinnacle",
+  name: "Padded Folding Chair — Burgundy",
+  desc: "Commercial-grade padded folding chair with burgundy fabric seat and back. Steel frame. Bulk carton quantities.",
+  img: "/lovable-uploads/Padded_Folding_Chair_Burgundy.jpeg",
+  cat: "Furniture"
+},
+{
+  brand: "Emri Pinnacle",
+  name: "Folding Chairs — White/Gray Bulk",
+  desc: "Heavy-duty plastic folding chairs in white/gray. Stackable design for easy storage. Full pallet wholesale orders.",
+  img: "/lovable-uploads/Folding_Chairs_White_Bulk.jpeg",
+  cat: "Furniture"
+}];
+
 
 const Products = () => {
   const [activeCategory, setActiveCategory] = useState<Category>("All");
@@ -251,8 +265,8 @@ const Products = () => {
       <PageHero
         label="Our Products"
         title="Premium Bulk Dry Food Commodities"
-        description="Containerized dry food commodities and supermarket goods sourced directly from trusted manufacturers across the USA."
-      />
+        description="Containerized dry food commodities and supermarket goods sourced directly from trusted manufacturers across the USA." />
+      
 
       {/* Notice bar */}
       <div className="bg-primary/5 border-y border-primary/10">
@@ -269,40 +283,39 @@ const Products = () => {
         <div className="container">
           {/* Category filter — pill style */}
           <div className="flex flex-wrap gap-2 mb-12 justify-center">
-            {categories.map((c) => (
-              <button
-                key={c.label}
-                onClick={() => setActiveCategory(c.label)}
-                className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
-                  activeCategory === c.label
-                    ? "bg-gradient-gold text-background shadow-gold"
-                    : "bg-secondary/50 text-muted-foreground hover:text-foreground hover:bg-secondary"
-                }`}
-              >
+            {categories.map((c) =>
+            <button
+              key={c.label}
+              onClick={() => setActiveCategory(c.label)}
+              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
+              activeCategory === c.label ?
+              "bg-gradient-gold text-background shadow-gold" :
+              "bg-secondary/50 text-muted-foreground hover:text-foreground hover:bg-secondary"}`
+              }>
+              
                 {c.label} <span className="opacity-60">({c.count})</span>
               </button>
-            ))}
+            )}
           </div>
 
           {/* Product grid */}
           <motion.div layout className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-            {filtered.map((p, i) => (
-              <motion.div
-                key={p.brand + p.name}
-                layout
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={gridInView ? { opacity: 1, scale: 1 } : {}}
-                transition={{ delay: Math.min(0.03 * i, 0.5) }}
-                className="group rounded-xl overflow-hidden glass-card hover:border-primary/30 transition-all duration-300"
-              >
+            {filtered.map((p, i) =>
+            <motion.div
+              key={p.brand + p.name}
+              layout
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={gridInView ? { opacity: 1, scale: 1 } : {}}
+              transition={{ delay: Math.min(0.03 * i, 0.5) }}
+              className="group rounded-xl overflow-hidden glass-card hover:border-primary/30 transition-all duration-300">
+              
                 <div className="aspect-square bg-secondary/20 flex items-center justify-center p-4 relative overflow-hidden">
                   <img
-                    src={p.img}
-                    alt={`${p.brand} ${p.name}`}
-                    className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
-                    loading="lazy"
-                  />
-
+                  src={p.img}
+                  alt={`${p.brand} ${p.name}`}
+                  className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy" />
+                
                   <span className="absolute top-2 left-2 text-[10px] px-2 py-1 rounded-md bg-background/80 backdrop-blur text-primary font-semibold uppercase tracking-wider">
                     {p.brand}
                   </span>
@@ -312,7 +325,7 @@ const Products = () => {
                   <p className="text-[11px] text-muted-foreground mt-1 line-clamp-2">{p.desc}</p>
                 </div>
               </motion.div>
-            ))}
+            )}
           </motion.div>
 
           <p className="text-center text-sm text-muted-foreground mt-10">
@@ -322,6 +335,31 @@ const Products = () => {
       </section>
 
       {/* Own Brand Banner */}
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
 
       {/* CTA */}
       <section className="py-20">
@@ -335,16 +373,16 @@ const Products = () => {
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-gold text-background font-semibold rounded-lg hover:opacity-90 transition-opacity shadow-gold"
-          >
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-gold text-background font-semibold rounded-lg hover:opacity-90 transition-opacity shadow-gold">
+            
             Request a Quote <ArrowRight size={18} />
           </a>
         </div>
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>);
+
 };
 
 export default Products;
