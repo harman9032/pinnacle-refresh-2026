@@ -13,17 +13,21 @@ type Category =
 "Canned Goods" |
 "Beverages" |
 "Snacks & Noodles" |
-"Pet Food";
+"Pet Food" |
+"Smart Locks" |
+"Furniture";
 
 const categories: {label: Category;count: number;}[] = [
-{ label: "All", count: 26 },
+{ label: "All", count: 31 },
 { label: "Beans & Legumes", count: 11 },
 { label: "Grains & Cereals", count: 6 },
 { label: "Cooking Oils", count: 3 },
 { label: "Canned Goods", count: 1 },
 { label: "Beverages", count: 2 },
 { label: "Snacks & Noodles", count: 2 },
-{ label: "Pet Food", count: 1 }];
+{ label: "Pet Food", count: 1 },
+{ label: "Smart Locks", count: 3 },
+{ label: "Furniture", count: 2 }];
 
 
 const products = [
