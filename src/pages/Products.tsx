@@ -329,7 +329,7 @@ const Products = () => {
           </motion.div>
 
           <p className="text-center text-sm text-muted-foreground mt-10">
-            Showing {filtered.length} of 26 products — container quantities only.
+            Showing {filtered.length} of 31 products — container quantities only.
           </p>
         </div>
       </section>
